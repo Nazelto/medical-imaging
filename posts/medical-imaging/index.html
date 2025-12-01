@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Medical_imaging - 医学影像分析</title><meta name="author" content="">
+<meta name="description" content="医学影像分析系统 - 函数文档与流程说明
+"><meta name="keywords" content=''>
+  <meta itemprop="name" content="Medical_imaging">
+  <meta itemprop="description" content="医学影像分析系统 - 函数文档与流程说明">
+  <meta itemprop="datePublished" content="2025-12-01T20:40:14+08:00">
+  <meta itemprop="dateModified" content="2025-12-01T20:40:14+08:00">
+  <meta itemprop="wordCount" content="772"><meta property="og:url" content="http://nazelto.github.io/posts/medical-imaging/">
+  <meta property="og:site_name" content="医学影像分析">
+  <meta property="og:title" content="Medical_imaging">
+  <meta property="og:description" content="医学影像分析系统 - 函数文档与流程说明">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-01T20:40:14+08:00">
+    <meta property="article:modified_time" content="2025-12-01T20:40:14+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Medical_imaging">
+  <meta name="twitter:description" content="医学影像分析系统 - 函数文档与流程说明">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://nazelto.github.io/posts/medical-imaging/" title="Medical_imaging - 医学影像分析" /><link rel="next" type="text/html" href="http://nazelto.github.io/posts/test/" title="Test" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Medical_imaging",
+    "inLanguage": "zh-cn",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/nazelto.github.io\/posts\/medical-imaging\/"
+    },"genre": "posts","keywords": "","wordcount":  772 ,
+    "url": "http:\/\/nazelto.github.io\/posts\/medical-imaging\/","datePublished": "2025-12-01T20:40:14+08:00","dateModified": "2025-12-01T20:40:14+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Author"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="医学影像分析"><span class="header-title-text">医学影像分析</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/archives/"><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Archives</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/"><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/"><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="医学影像分析"><span class="header-title-text">医学影像分析</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/archives/"><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Archives</a></li><li class="menu-item"><a class="menu-link" href="/categories/"><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/"><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Medical_imaging</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Anonymous</span></span></div><div class="post-meta-line"><span title="published on 2025-12-01 20:40:14"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2025-12-01">2025-12-01</time></span>&nbsp;<span title="772 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 800 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>4 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#项目概述">项目概述</a>
+      <ul>
+        <li><a href="#系统架构">系统架构</a></li>
+      </ul>
+    </li>
+    <li><a href="#模块详解">模块详解</a>
+      <ul>
+        <li><a href="#1-utilspy---工具函数模块">1. utils.py - 工具函数模块</a>
+          <ul>
+            <li><a href="#函数encode_image_to_base64">函数：encode_image_to_base64()</a></li>
+            <li><a href="#函数extract_json_from_text">函数：extract_json_from_text()</a></li>
+            <li><a href="#函数get_image_files_from_folder">函数：get_image_files_from_folder()</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-typespy---类型定义模块">2. types.py - 类型定义模块</a>
+          <ul>
+            <li><a href="#classificationresult">ClassificationResult</a></li>
+            <li><a href="#detectionobject">DetectionObject</a></li>
+            <li><a href="#detectionresult">DetectionResult</a></li>
+            <li><a href="#analysisresult">AnalysisResult</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-api_clientpy---vlm-api客户端模块">3. api_client.py - VLM API客户端模块</a>
+          <ul>
+            <li><a href="#类vlmclient">类：VLMClient</a>
+              <ul>
+                <li><a href="#方法init">方法：<strong>init</strong>()</a></li>
+                <li><a href="#方法call">方法：call()</a></li>
+                <li><a href="#方法close">方法：close()</a></li>
+                <li><a href="#上下文管理器支持">上下文管理器支持</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#4-analyzerpy---医学影像分析器模块">4. analyzer.py - 医学影像分析器模块</a>
+          <ul>
+            <li><a href="#类medicalimageanalyzer">类：MedicalImageAnalyzer</a>
+              <ul>
+                <li><a href="#方法init-1">方法：<strong>init</strong>()</a></li>
+                <li><a href="#方法classify_image">方法：classify_image()</a></li>
+                <li><a href="#方法detect_objects">方法：detect_objects()</a></li>
+                <li><a href="#方法analyze_images">方法：analyze_images()</a></li>
+                <li><a href="#方法_analyze_single_image">方法：_analyze_single_image()</a></li>
+                <li><a href="#方法_analyze_multiple_images">方法：_analyze_multiple_images()</a></li>
+                <li><a href="#方法_explain_classification_groups">方法：_explain_classification_groups()</a></li>
+                <li><a href="#方法close-1">方法：close()</a></li>
+                <li><a href="#上下文管理器支持-1">上下文管理器支持</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#5-clipy---命令行界面模块">5. cli.py - 命令行界面模块</a>
+          <ul>
+            <li><a href="#函数print_classification_results">函数：print_classification_results()</a></li>
+            <li><a href="#函数print_multiple_analysis_results">函数：print_multiple_analysis_results()</a></li>
+            <li><a href="#函数main">函数：main()</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#完整工作流程">完整工作流程</a>
+      <ul>
+        <li><a href="#单张图像分析流程">单张图像分析流程</a></li>
+        <li><a href="#多张图像分析流程">多张图像分析流程</a></li>
+      </ul>
+    </li>
+    <li><a href="#api请求格式">API请求格式</a>
+      <ul>
+        <li><a href="#vlm-api-请求示例">VLM API 请求示例</a></li>
+        <li><a href="#vlm-api-响应示例">VLM API 响应示例</a></li>
+      </ul>
+    </li>
+    <li><a href="#错误处理">错误处理</a></li>
+    <li><a href="#配置参数">配置参数</a>
+      <ul>
+        <li><a href="#vlm-api-配置">VLM API 配置</a></li>
+        <li><a href="#分类参数">分类参数</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>医学影像分析系统 - 函数文档与流程说明</p>
+<h1 class="heading-element" id="医学影像分析系统---函数文档与流程说明"><span>医学影像分析系统 - 函数文档与流程说明</span>
+  <a href="#%e5%8c%bb%e5%ad%a6%e5%bd%b1%e5%83%8f%e5%88%86%e6%9e%90%e7%b3%bb%e7%bb%9f---%e5%87%bd%e6%95%b0%e6%96%87%e6%a1%a3%e4%b8%8e%e6%b5%81%e7%a8%8b%e8%af%b4%e6%98%8e" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h1><h2 class="heading-element" id="项目概述"><span>项目概述</span>
+  <a href="#%e9%a1%b9%e7%9b%ae%e6%a6%82%e8%bf%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>本项目是一个基于VLM（视觉语言模型）的医学影像分析系统，支持医学影像的自动分类、目标检测和批量分析。</p>
+<h3 class="heading-element" id="系统架构"><span>系统架构</span>
+  <a href="#%e7%b3%bb%e7%bb%9f%e6%9e%b6%e6%9e%84" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><pre tabindex="0"><code>CLI层 (cli.py)
+    ↓
+分析核心层 (analyzer.py)
+    ↓
+API通信层 (api_client.py)
+    ↓
+工具函数层 (utils.py)
+    ↓
+类型定义层 (types.py)</code></pre><hr>
+<h2 class="heading-element" id="模块详解"><span>模块详解</span>
+  <a href="#%e6%a8%a1%e5%9d%97%e8%af%a6%e8%a7%a3" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="1-utilspy---工具函数模块"><span>1. utils.py - 工具函数模块</span>
+  <a href="#1-utilspy---%e5%b7%a5%e5%85%b7%e5%87%bd%e6%95%b0%e6%a8%a1%e5%9d%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 class="heading-element" id="函数encode_image_to_base64"><span>函数：encode_image_to_base64()</span>
+  <a href="#%e5%87%bd%e6%95%b0encode_image_to_base64" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：将图像文件编码为Base64字符串，用于通过API发送给VLM模型。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>以二进制模式打开图像文件</li>
+<li>读取文件内容</li>
+<li>编码为Base64格式</li>
+<li>解码为UTF-8字符串返回</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>image_path</code> (str): 图像文件的路径</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>Base64编码的字符串</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>base64_str <span style="color:#f92672">=</span> encode_image_to_base64(<span style="color:#e6db74">&#34;path/to/image.jpg&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 返回: &#34;iVBORw0KGgoAAAANSUhEUgAAAAUA...&#34;</span></span></span></code></pre></div><hr>
+<h4 class="heading-element" id="函数extract_json_from_text"><span>函数：extract_json_from_text()</span>
+  <a href="#%e5%87%bd%e6%95%b0extract_json_from_text" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：从VLM模型的响应文本中提取JSON对象。模型可能在JSON前后添加其他文本，此函数负责定位并提取JSON部分。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>查找第一个左花括号 <code>{</code> 的位置</li>
+<li>查找最后一个右花括号 <code>}</code> 的位置</li>
+<li>检查是否找到有效的JSON范围</li>
+<li>尝试解析JSON字符串为字典</li>
+<li>如果解析失败，返回包含原始响应的字典</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>text</code> (str): 包含JSON的文本</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>dict[str, Any]: 提取的JSON字典，或包含 <code>raw_response</code> 的字典</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;模型分析结果如下：{</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">category</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">: </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">正常</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">, </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">confidence</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">: 95}&#34;</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> extract_json_from_text(text)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 返回: {&#34;category&#34;: &#34;正常&#34;, &#34;confidence&#34;: 95}</span></span></span></code></pre></div><hr>
+<h4 class="heading-element" id="函数get_image_files_from_folder"><span>函数：get_image_files_from_folder()</span>
+  <a href="#%e5%87%bd%e6%95%b0get_image_files_from_folder" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：扫描指定文件夹及其子文件夹，找出所有支持的医学影像格式文件。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>将路径字符串转换为Path对象</li>
+<li>检查文件夹是否存在</li>
+<li>检查路径是否为目录</li>
+<li>定义支持的图像扩展名集合</li>
+<li>递归遍历文件夹中的所有文件</li>
+<li>筛选出图像文件</li>
+<li>返回排序后的文件路径列表</li>
+</ol>
+<p><strong>支持的图像格式</strong>：</p>
+<ul>
+<li><code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>, <code>.bmp</code>, <code>.gif</code>, <code>.webp</code>, <code>.tiff</code>, <code>.tif</code></li>
+</ul>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>folder_path</code> (str): 文件夹路径</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>list[str]: 排序后的图像文件路径列表</li>
+</ul>
+<p><strong>异常</strong>：</p>
+<ul>
+<li><code>FileNotFoundError</code>: 如果文件夹不存在</li>
+<li><code>ValueError</code>: 如果路径不是目录</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>images <span style="color:#f92672">=</span> get_image_files_from_folder(<span style="color:#e6db74">&#34;path/to/medical_images&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 返回: [&#34;path/to/medical_images/image1.jpg&#34;, &#34;path/to/medical_images/image2.png&#34;]</span></span></span></code></pre></div><hr>
+<h3 class="heading-element" id="2-typespy---类型定义模块"><span>2. types.py - 类型定义模块</span>
+  <a href="#2-typespy---%e7%b1%bb%e5%9e%8b%e5%ae%9a%e4%b9%89%e6%a8%a1%e5%9d%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>本模块定义了整个系统使用的数据结构，确保类型安全和代码可读性。</p>
+<h4 class="heading-element" id="classificationresult"><span>ClassificationResult</span>
+  <a href="#classificationresult" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：存储单张医学影像的分类分析结果。</p>
+<p><strong>字段</strong>：</p>
+<ul>
+<li><code>success</code> (bool): 分类是否成功</li>
+<li><code>image_path</code> (str): 图像文件路径</li>
+<li><code>result</code> (dict[str, Any]): 分类结果的详细数据（包含category、confidence等）</li>
+<li><code>full_response</code> (str): VLM模型的完整响应文本</li>
+<li><code>error</code> (str): 错误信息（如果分类失败）</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>result: ClassificationResult <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;success&#34;</span>: <span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;image_path&#34;</span>: <span style="color:#e6db74">&#34;image.jpg&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;result&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;image_type&#34;</span>: <span style="color:#e6db74">&#34;X光片&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;category&#34;</span>: <span style="color:#e6db74">&#34;肺炎&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;confidence&#34;</span>: <span style="color:#ae81ff">92</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;features&#34;</span>: <span style="color:#e6db74">&#34;右肺下叶有浸润影&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;reasoning&#34;</span>: <span style="color:#e6db74">&#34;...&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;full_response&#34;</span>: <span style="color:#e6db74">&#34;...&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><hr>
+<h4 class="heading-element" id="detectionobject"><span>DetectionObject</span>
+  <a href="#detectionobject" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：表示医学影像中检测到的异常区域或重要结构。</p>
+<p><strong>字段</strong>：</p>
+<ul>
+<li><code>type</code> (str): 对象类型（如&quot;肺炎&quot;、&ldquo;肿瘤&quot;等）</li>
+<li><code>bbox</code> (list[float]): 边界框坐标 [x_min, y_min, x_max, y_max]，归一化到0-1</li>
+<li><code>confidence</code> (float): 检测置信度（0-100）</li>
+<li><code>size</code> (str): 对象大小描述</li>
+<li><code>description</code> (str): 对象的详细描述</li>
+</ul>
+<hr>
+<h4 class="heading-element" id="detectionresult"><span>DetectionResult</span>
+  <a href="#detectionresult" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：存储单张医学影像的目标检测分析结果。</p>
+<p><strong>字段</strong>：</p>
+<ul>
+<li><code>success</code> (bool): 检测是否成功</li>
+<li><code>image_path</code> (str): 图像文件路径</li>
+<li><code>result</code> (dict[str, Any]): 检测结果的详细数据</li>
+<li><code>full_response</code> (str): VLM模型的完整响应文本</li>
+<li><code>error</code> (str): 错误信息（如果检测失败）</li>
+</ul>
+<hr>
+<h4 class="heading-element" id="analysisresult"><span>AnalysisResult</span>
+  <a href="#analysisresult" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：存储批量医学影像分析的综合结果，包括分组、统计和解释。</p>
+<p><strong>字段</strong>：</p>
+<ul>
+<li><code>total_images</code> (int): 分析的图像总数</li>
+<li><code>classification_results</code> (list[ClassificationResult]): 所有图像的分类结果列表</li>
+<li><code>grouped_by_category</code> (dict[str, list[ClassificationResult]]): 按诊断类别分组的结果</li>
+<li><code>explanations</code> (dict[str, Any]): 每个类别的解释说明</li>
+<li><code>statistics</code> (dict[str, Any]): 统计信息（类别数、分布等）</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="3-api_clientpy---vlm-api客户端模块"><span>3. api_client.py - VLM API客户端模块</span>
+  <a href="#3-api_clientpy---vlm-api%e5%ae%a2%e6%88%b7%e7%ab%af%e6%a8%a1%e5%9d%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 class="heading-element" id="类vlmclient"><span>类：VLMClient</span>
+  <a href="#%e7%b1%bbvlmclient" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：封装与VLM服务的HTTP通信，处理认证、请求构建和响应解析。支持上下文管理器协议，确保资源正确释放。</p>
+<h5 class="heading-element" id="方法init"><span>方法：<strong>init</strong>()</span>
+  <a href="#%e6%96%b9%e6%b3%95init" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>流程</strong>：</p>
+<ol>
+<li>保存API配置参数</li>
+<li>创建HTTP会话对象</li>
+<li>设置认证头和内容类型</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>api_key</code> (str): API密钥，用于身份验证</li>
+<li><code>base_url</code> (str): API服务的基础URL</li>
+<li><code>model_name</code> (str): 要使用的模型名称</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>client <span style="color:#f92672">=</span> VLMClient(
+</span></span><span style="display:flex;"><span>    api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sk-xxx&#34;</span>,
+</span></span><span style="display:flex;"><span>    base_url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://api.example.com/v1&#34;</span>,
+</span></span><span style="display:flex;"><span>    model_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;qwen3-vl-plus&#34;</span>
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div><hr>
+<h5 class="heading-element" id="方法call"><span>方法：call()</span>
+  <a href="#%e6%96%b9%e6%b3%95call" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：调用VLM API进行推理。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>构建API端点URL</li>
+<li>组装请求负载（模型名、消息、参数）</li>
+<li>发送POST请求到VLM服务</li>
+<li>解析响应JSON</li>
+<li>提取模型生成的文本内容</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>messages</code> (list[dict[str, Any]]): 消息列表，每条消息包含role和content</li>
+<li><code>max_tokens</code> (int, 默认2000): 模型生成的最大令牌数</li>
+<li><code>temperature</code> (float, 默认0.3): 生成温度（0.3表示低随机性，更确定性）</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>str: 模型生成的响应文本</li>
+</ul>
+<p><strong>异常</strong>：</p>
+<ul>
+<li><code>RuntimeError</code>: 如果响应格式无效或缺少预期字段</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>call(
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;content&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;分析这张医学影像&#34;</span>},
+</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;image_url&#34;</span>, <span style="color:#e6db74">&#34;image_url&#34;</span>: {<span style="color:#e6db74">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;data:image/jpeg;base64,...&#34;</span>}}
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">2000</span>,
+</span></span><span style="display:flex;"><span>    temperature<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div><hr>
+<h5 class="heading-element" id="方法close"><span>方法：close()</span>
+  <a href="#%e6%96%b9%e6%b3%95close" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：关闭HTTP会话，释放资源。</p>
+<hr>
+<h5 class="heading-element" id="上下文管理器支持"><span>上下文管理器支持</span>
+  <a href="#%e4%b8%8a%e4%b8%8b%e6%96%87%e7%ae%a1%e7%90%86%e5%99%a8%e6%94%af%e6%8c%81" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：支持with语句使用，确保资源正确释放。</p>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> VLMClient(api_key, base_url, model_name) <span style="color:#66d9ef">as</span> client:
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>call(messages)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 自动调用close()释放资源</span></span></span></code></pre></div><hr>
+<h3 class="heading-element" id="4-analyzerpy---医学影像分析器模块"><span>4. analyzer.py - 医学影像分析器模块</span>
+  <a href="#4-analyzerpy---%e5%8c%bb%e5%ad%a6%e5%bd%b1%e5%83%8f%e5%88%86%e6%9e%90%e5%99%a8%e6%a8%a1%e5%9d%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 class="heading-element" id="类medicalimageanalyzer"><span>类：MedicalImageAnalyzer</span>
+  <a href="#%e7%b1%bbmedicalimageanalyzer" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：提供医学影像分析的主要功能，包括单张图像分类、目标检测、批量图像分析、结果分组和解释。</p>
+<h5 class="heading-element" id="方法init-1"><span>方法：<strong>init</strong>()</span>
+  <a href="#%e6%96%b9%e6%b3%95init-1" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>流程</strong>：</p>
+<ol>
+<li>创建VLM客户端实例</li>
+<li>保存API配置</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>api_key</code> (str): VLM服务的API密钥</li>
+<li><code>base_url</code> (str): VLM服务的基础URL</li>
+<li><code>model_name</code> (str): 要使用的模型名称</li>
+</ul>
+<hr>
+<h5 class="heading-element" id="方法classify_image"><span>方法：classify_image()</span>
+  <a href="#%e6%96%b9%e6%b3%95classify_image" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：对医学影像进行分类。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>验证图像文件是否存在</li>
+<li>将图像编码为Base64格式</li>
+<li>根据是否提供类别列表构建不同的提示词</li>
+<li>调用VLM API进行分类</li>
+<li>从响应中提取JSON结果</li>
+<li>返回分类结果或错误信息</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>image_path</code> (str): 图像文件路径</li>
+<li><code>categories</code> (list[str] | None): 可选的分类类别列表</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>ClassificationResult: 分类结果字典</li>
+</ul>
+<p><strong>异常</strong>：</p>
+<ul>
+<li><code>FileNotFoundError</code>: 如果图像文件不存在</li>
+</ul>
+<p><strong>返回结果示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;success&#34;</span>: <span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;image_path&#34;</span>: <span style="color:#e6db74">&#34;image.jpg&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;result&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;image_type&#34;</span>: <span style="color:#e6db74">&#34;X光片&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;category&#34;</span>: <span style="color:#e6db74">&#34;肺炎&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;confidence&#34;</span>: <span style="color:#ae81ff">92</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;features&#34;</span>: <span style="color:#e6db74">&#34;右肺下叶有浸润影&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;reasoning&#34;</span>: <span style="color:#e6db74">&#34;基于影像特征分析...&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;full_response&#34;</span>: <span style="color:#e6db74">&#34;...&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><hr>
+<h5 class="heading-element" id="方法detect_objects"><span>方法：detect_objects()</span>
+  <a href="#%e6%96%b9%e6%b3%95detect_objects" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：在医学影像中检测目标对象。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>验证图像文件是否存在</li>
+<li>将图像编码为Base64格式</li>
+<li>如果提供了分类结果，提取分类信息作为上下文</li>
+<li>根据是否提供目标对象列表构建不同的提示词</li>
+<li>调用VLM API进行目标检测</li>
+<li>从响应中提取JSON结果</li>
+<li>返回检测结果或错误信息</li>
+</ol>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>支持基于分类结果的上下文检测</li>
+<li>如果分类结果显示异常，会特别强调检测异常区域</li>
+<li>返回边界框坐标和置信度</li>
+</ul>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>image_path</code> (str): 图像文件路径</li>
+<li><code>target_objects</code> (list[str] | None): 可选的目标对象列表</li>
+<li><code>classification_result</code> (ClassificationResult | None): 可选的分类结果</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>DetectionResult: 检测结果字典</li>
+</ul>
+<hr>
+<h5 class="heading-element" id="方法analyze_images"><span>方法：analyze_images()</span>
+  <a href="#%e6%96%b9%e6%b3%95analyze_images" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：分析医学影像（单张或多张）。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>规范化输入：将单个路径转换为列表，处理文件夹路径</li>
+<li>验证所有图像文件是否存在</li>
+<li>根据图像数量选择分析方式：
+<ul>
+<li>单张图像：直接返回分类结果</li>
+<li>多张图像：进行分组、统计和解释</li>
+</ul>
+</li>
+</ol>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>支持灵活的输入格式（单个文件、文件列表、文件夹）</li>
+<li>自动处理文件夹中的所有图像</li>
+<li>返回结果格式根据图像数量自动调整</li>
+</ul>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>image_paths</code> (str | list[str]): 单个图像路径、路径列表或文件夹路径</li>
+<li><code>categories</code> (list[str] | None): 可选的分类类别列表</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>dict[str, Any]: 分析结果字典</li>
+</ul>
+<p><strong>异常</strong>：</p>
+<ul>
+<li><code>FileNotFoundError</code>: 如果任何图像文件不存在</li>
+</ul>
+<hr>
+<h5 class="heading-element" id="方法_analyze_single_image"><span>方法：_analyze_single_image()</span>
+  <a href="#%e6%96%b9%e6%b3%95_analyze_single_image" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：分析单张图像。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>调用classify_image方法进行分类</li>
+<li>返回分类结果</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>image_path</code> (str): 图像文件路径</li>
+<li><code>categories</code> (list[str] | None): 可选的分类类别列表</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>ClassificationResult: 分类结果字典</li>
+</ul>
+<hr>
+<h5 class="heading-element" id="方法_analyze_multiple_images"><span>方法：_analyze_multiple_images()</span>
+  <a href="#%e6%96%b9%e6%b3%95_analyze_multiple_images" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：分析多张图像。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>对每张图像进行分类</li>
+<li>按诊断类别对结果进行分组</li>
+<li>为每个类别生成解释说明</li>
+<li>计算统计信息</li>
+<li>返回综合分析结果</li>
+</ol>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>自动分组相同诊断类别的图像</li>
+<li>生成每个类别的共同特征解释</li>
+<li>提供类别分布统计</li>
+</ul>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>image_paths</code> (list[str]): 图像文件路径列表</li>
+<li><code>categories</code> (list[str] | None): 可选的分类类别列表</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>dict[str, Any]: 包含分组、统计和解释的综合分析结果</li>
+</ul>
+<hr>
+<h5 class="heading-element" id="方法_explain_classification_groups"><span>方法：_explain_classification_groups()</span>
+  <a href="#%e6%96%b9%e6%b3%95_explain_classification_groups" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：解释为什么图像被分组在一起。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>遍历每个分类类别</li>
+<li>提取该类别中所有图像的特征和推理信息</li>
+<li>构建包含所有图像信息的提示词</li>
+<li>调用VLM API生成类别解释</li>
+<li>提取并保存解释结果</li>
+</ol>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>为每个类别生成统一的解释</li>
+<li>分析类别内图像的共同特征</li>
+<li>识别图像之间的细微差异</li>
+<li>处理API调用失败的情况</li>
+</ul>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>grouped_images</code> (dict[str, list[ClassificationResult]]): 按类别分组的图像结果字典</li>
+</ul>
+<p><strong>返回值</strong>：</p>
+<ul>
+<li>dict[str, Any]: 每个类别的解释说明字典</li>
+</ul>
+<hr>
+<h5 class="heading-element" id="方法close-1"><span>方法：close()</span>
+  <a href="#%e6%96%b9%e6%b3%95close-1" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：关闭分析器并释放资源。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>关闭VLM客户端的HTTP会话</li>
+<li>释放网络连接</li>
+</ol>
+<hr>
+<h5 class="heading-element" id="上下文管理器支持-1"><span>上下文管理器支持</span>
+  <a href="#%e4%b8%8a%e4%b8%8b%e6%96%87%e7%ae%a1%e7%90%86%e5%99%a8%e6%94%af%e6%8c%81-1" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h5><p><strong>用途</strong>：支持with语句使用，确保资源正确释放。</p>
+<p><strong>示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> MedicalImageAnalyzer(api_key, base_url, model_name) <span style="color:#66d9ef">as</span> analyzer:
+</span></span><span style="display:flex;"><span>    results <span style="color:#f92672">=</span> analyzer<span style="color:#f92672">.</span>analyze_images(<span style="color:#e6db74">&#34;path/to/images&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 自动调用close()释放资源</span></span></span></code></pre></div><hr>
+<h3 class="heading-element" id="5-clipy---命令行界面模块"><span>5. cli.py - 命令行界面模块</span>
+  <a href="#5-clipy---%e5%91%bd%e4%bb%a4%e8%a1%8c%e7%95%8c%e9%9d%a2%e6%a8%a1%e5%9d%97" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 class="heading-element" id="函数print_classification_results"><span>函数：print_classification_results()</span>
+  <a href="#%e5%87%bd%e6%95%b0print_classification_results" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：打印单张图像的分类结果。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>检查分类是否成功</li>
+<li>如果失败，打印错误信息</li>
+<li>如果成功，按格式化方式打印：
+<ul>
+<li>图像基本信息（路径、类型）</li>
+<li>特征分析（关键特征、推理过程）</li>
+<li>分类结果（诊断类别、置信度、异常标记）</li>
+</ul>
+</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>results</code> (dict[str, Any]): 分类结果字典</li>
+</ul>
+<p><strong>输出示例</strong>：</p>
+<pre tabindex="0"><code>============================================================
+Classification Results
+============================================================
+
+Image path: image.jpg
+Image type: X光片
+
+【Image Feature Analysis】
+------------------------------------------------------------
+Key features:
+  右肺下叶有浸润影
+
+Analysis reasoning:
+  基于影像特征分析...
+
+【Classification Result】
+------------------------------------------------------------
+Diagnosis category: 肺炎
+Confidence: 92%
+Abnormal: Yes
+
+============================================================</code></pre><hr>
+<h4 class="heading-element" id="函数print_multiple_analysis_results"><span>函数：print_multiple_analysis_results()</span>
+  <a href="#%e5%87%bd%e6%95%b0print_multiple_analysis_results" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：打印多张图像的分析结果。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>打印总体统计信息（图像总数、类别数、分布）</li>
+<li>遍历每个分类类别</li>
+<li>对于每个类别，打印：
+<ul>
+<li>类别名称和图像数量</li>
+<li>共同特征</li>
+<li>分类原因</li>
+<li>相似性分析</li>
+<li>差异分析</li>
+<li>总结说明</li>
+</ul>
+</li>
+</ol>
+<p><strong>参数</strong>：</p>
+<ul>
+<li><code>results</code> (dict[str, Any]): 多张图像分析结果字典</li>
+</ul>
+<hr>
+<h4 class="heading-element" id="函数main"><span>函数：main()</span>
+  <a href="#%e5%87%bd%e6%95%b0main" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>用途</strong>：主CLI入口点。</p>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>打印欢迎信息</li>
+<li>初始化医学影像分析器</li>
+<li>定义分类类别列表</li>
+<li>获取用户输入的图像路径（命令行参数或交互式输入）</li>
+<li>验证路径是否存在</li>
+<li>调用分析器进行分析</li>
+<li>根据结果类型选择合适的打印函数</li>
+<li>处理异常并确保资源释放</li>
+</ol>
+<p><strong>支持的分类类别</strong>：</p>
+<ul>
+<li>Normal（正常）</li>
+<li>Pneumonia（肺炎）</li>
+<li>Tuberculosis（结核病）</li>
+<li>Lung Cancer（肺癌）</li>
+<li>Other Abnormalities（其他异常）</li>
+</ul>
+<p><strong>使用示例</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 命令行参数方式</span>
+</span></span><span style="display:flex;"><span>python -m medical_imaging.cli path/to/image.jpg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 交互式输入方式</span>
+</span></span><span style="display:flex;"><span>python -m medical_imaging.cli
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 然后输入图像路径或文件夹路径</span></span></span></code></pre></div><hr>
+<h2 class="heading-element" id="完整工作流程"><span>完整工作流程</span>
+  <a href="#%e5%ae%8c%e6%95%b4%e5%b7%a5%e4%bd%9c%e6%b5%81%e7%a8%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="单张图像分析流程"><span>单张图像分析流程</span>
+  <a href="#%e5%8d%95%e5%bc%a0%e5%9b%be%e5%83%8f%e5%88%86%e6%9e%90%e6%b5%81%e7%a8%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><pre tabindex="0"><code>用户输入图像路径
+    ↓
+main() 验证路径
+    ↓
+analyzer.analyze_images()
+    ↓
+_analyze_single_image()
+    ↓
+classify_image()
+    ├─ 验证文件存在
+    ├─ encode_image_to_base64() 编码图像
+    ├─ 构建提示词
+    ├─ client.call() 调用VLM API
+    ├─ extract_json_from_text() 提取结果
+    └─ 返回ClassificationResult
+    ↓
+print_classification_results() 打印结果
+    ↓
+analyzer.close() 释放资源</code></pre><h3 class="heading-element" id="多张图像分析流程"><span>多张图像分析流程</span>
+  <a href="#%e5%a4%9a%e5%bc%a0%e5%9b%be%e5%83%8f%e5%88%86%e6%9e%90%e6%b5%81%e7%a8%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><pre tabindex="0"><code>用户输入文件夹路径
+    ↓
+main() 验证路径
+    ↓
+analyzer.analyze_images()
+    ↓
+get_image_files_from_folder() 获取所有图像
+    ↓
+_analyze_multiple_images()
+    ├─ 对每张图像调用 classify_image()
+    ├─ 按category分组结果
+    ├─ _explain_classification_groups()
+    │  ├─ 为每个类别提取图像信息
+    │  ├─ 构建解释提示词
+    │  ├─ client.call() 生成解释
+    │  └─ 保存解释结果
+    ├─ 计算统计信息
+    └─ 返回AnalysisResult
+    ↓
+print_multiple_analysis_results() 打印结果
+    ↓
+analyzer.close() 释放资源</code></pre><hr>
+<h2 class="heading-element" id="api请求格式"><span>API请求格式</span>
+  <a href="#api%e8%af%b7%e6%b1%82%e6%a0%bc%e5%bc%8f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="vlm-api-请求示例"><span>VLM API 请求示例</span>
+  <a href="#vlm-api-%e8%af%b7%e6%b1%82%e7%a4%ba%e4%be%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><json-viewer value="&#34;{\n  \&#34;model\&#34;: \&#34;qwen3-vl-plus\&#34;,\n  \&#34;messages\&#34;: [\n    {\n      \&#34;role\&#34;: \&#34;user\&#34;,\n      \&#34;content\&#34;: [\n        {\n          \&#34;type\&#34;: \&#34;text\&#34;,\n          \&#34;text\&#34;: \&#34;请对这张医疗影像进行专业分类...\&#34;\n        },\n        {\n          \&#34;type\&#34;: \&#34;image_url\&#34;,\n          \&#34;image_url\&#34;: {\n            \&#34;url\&#34;: \&#34;data:image/jpeg;base64,iVBORw0KGgo...\&#34;\n          }\n        }\n      ]\n    }\n  ],\n  \&#34;max_tokens\&#34;: 2000,\n  \&#34;temperature\&#34;: 0.3\n}&#34;" expand-depth="1" boxed copyable="{&#34;copiedText&#34;:&#34;Copied&#34;,&#34;copyText&#34;:&#34;Copy&#34;}"></json-viewer><h3 class="heading-element" id="vlm-api-响应示例"><span>VLM API 响应示例</span>
+  <a href="#vlm-api-%e5%93%8d%e5%ba%94%e7%a4%ba%e4%be%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><json-viewer value="&#34;{\n  \&#34;choices\&#34;: [\n    {\n      \&#34;message\&#34;: {\n        \&#34;content\&#34;: \&#34;{\\\&#34;image_type\\\&#34;: \\\&#34;X光片\\\&#34;, \\\&#34;category\\\&#34;: \\\&#34;肺炎\\\&#34;, \\\&#34;confidence\\\&#34;: 92, \\\&#34;features\\\&#34;: \\\&#34;右肺下叶有浸润影\\\&#34;, \\\&#34;reasoning\\\&#34;: \\\&#34;...\\\&#34;}\&#34;\n      }\n    }\n  ]\n}&#34;" expand-depth="1" boxed copyable="{&#34;copiedText&#34;:&#34;Copied&#34;,&#34;copyText&#34;:&#34;Copy&#34;}"></json-viewer><hr>
+<h2 class="heading-element" id="错误处理"><span>错误处理</span>
+  <a href="#%e9%94%99%e8%af%af%e5%a4%84%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>系统在以下情况下会返回错误：</p>
+<ol>
+<li><strong>文件不存在</strong>：<code>FileNotFoundError</code></li>
+<li><strong>路径不是目录</strong>：<code>ValueError</code></li>
+<li><strong>API响应格式无效</strong>：<code>RuntimeError</code></li>
+<li><strong>网络连接失败</strong>：<code>requests.RequestException</code></li>
+<li><strong>JSON解析失败</strong>：返回 <code>{&quot;raw_response&quot;: text}</code></li>
+</ol>
+<p>所有异常都会被捕获并返回包含 <code>success: False</code> 和 <code>error</code> 字段的结果。</p>
+<hr>
+<h2 class="heading-element" id="配置参数"><span>配置参数</span>
+  <a href="#%e9%85%8d%e7%bd%ae%e5%8f%82%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="vlm-api-配置"><span>VLM API 配置</span>
+  <a href="#vlm-api-%e9%85%8d%e7%bd%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DEFAULT_VLM_API_KEY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sk-854d708e4615444689646f3f7f979b8b&#34;</span>
+</span></span><span style="display:flex;"><span>DEFAULT_VLM_BASE_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://dashscope.aliyuncs.com/compatible-mode/v1&#34;</span>
+</span></span><span style="display:flex;"><span>DEFAULT_VLM_MODEL_NAME <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;qwen3-vl-plus&#34;</span></span></span></code></pre></div><h3 class="heading-element" id="分类参数"><span>分类参数</span>
+  <a href="#%e5%88%86%e7%b1%bb%e5%8f%82%e6%95%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li><code>max_tokens</code>: 2000（分类任务）</li>
+<li><code>max_tokens</code>: 3000（检测任务）</li>
+<li><code>temperature</code>: 0.3（低随机性，确定性强）</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="总结"><span>总结</span>
+  <a href="#%e6%80%bb%e7%bb%93" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>这个医学影像分析系统通过模块化设计，清晰地分离了各个功能层：</p>
+<ul>
+<li><strong>工具层</strong>：处理基础操作（编码、提取、扫描）</li>
+<li><strong>类型层</strong>：定义数据结构</li>
+<li><strong>通信层</strong>：处理API交互</li>
+<li><strong>分析层</strong>：实现核心分析逻辑</li>
+<li><strong>界面层</strong>：提供用户交互</li>
+</ul>
+<p>整个系统支持灵活的输入方式、完善的错误处理和资源管理，可以高效地处理单张或批量医学影像分析任务。</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2025-12-01 20:40:14">Updated on 2025-12-01&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on X" data-sharer="twitter" data-url="http://nazelto.github.io/posts/medical-imaging/" data-title="Medical_imaging" data-hashtags=""><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://nazelto.github.io/posts/medical-imaging/" data-hashtag="map[categories:[map[collections:[map[collectionList:true collectionNavigation:true featuredImage: featuredImagePreview: hiddenFromHomePage:false hiddenFromSearch:false]]]]]"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://nazelto.github.io/posts/medical-imaging/" data-title="Medical_imaging"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/test/" class="post-nav-item" rel="next" title="Test">Test<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside><dialog id="toc-dialog" aria-labelledby="toc-dialog-title" role="dialog">
+      <div class="toc">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-drawer"><nav >
+  <ul>
+    <li><a href="#项目概述">项目概述</a>
+      <ul>
+        <li><a href="#系统架构">系统架构</a></li>
+      </ul>
+    </li>
+    <li><a href="#模块详解">模块详解</a>
+      <ul>
+        <li><a href="#1-utilspy---工具函数模块">1. utils.py - 工具函数模块</a>
+          <ul>
+            <li><a href="#函数encode_image_to_base64">函数：encode_image_to_base64()</a></li>
+            <li><a href="#函数extract_json_from_text">函数：extract_json_from_text()</a></li>
+            <li><a href="#函数get_image_files_from_folder">函数：get_image_files_from_folder()</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-typespy---类型定义模块">2. types.py - 类型定义模块</a>
+          <ul>
+            <li><a href="#classificationresult">ClassificationResult</a></li>
+            <li><a href="#detectionobject">DetectionObject</a></li>
+            <li><a href="#detectionresult">DetectionResult</a></li>
+            <li><a href="#analysisresult">AnalysisResult</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-api_clientpy---vlm-api客户端模块">3. api_client.py - VLM API客户端模块</a>
+          <ul>
+            <li><a href="#类vlmclient">类：VLMClient</a>
+              <ul>
+                <li><a href="#方法init">方法：<strong>init</strong>()</a></li>
+                <li><a href="#方法call">方法：call()</a></li>
+                <li><a href="#方法close">方法：close()</a></li>
+                <li><a href="#上下文管理器支持">上下文管理器支持</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#4-analyzerpy---医学影像分析器模块">4. analyzer.py - 医学影像分析器模块</a>
+          <ul>
+            <li><a href="#类medicalimageanalyzer">类：MedicalImageAnalyzer</a>
+              <ul>
+                <li><a href="#方法init-1">方法：<strong>init</strong>()</a></li>
+                <li><a href="#方法classify_image">方法：classify_image()</a></li>
+                <li><a href="#方法detect_objects">方法：detect_objects()</a></li>
+                <li><a href="#方法analyze_images">方法：analyze_images()</a></li>
+                <li><a href="#方法_analyze_single_image">方法：_analyze_single_image()</a></li>
+                <li><a href="#方法_analyze_multiple_images">方法：_analyze_multiple_images()</a></li>
+                <li><a href="#方法_explain_classification_groups">方法：_explain_classification_groups()</a></li>
+                <li><a href="#方法close-1">方法：close()</a></li>
+                <li><a href="#上下文管理器支持-1">上下文管理器支持</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#5-clipy---命令行界面模块">5. cli.py - 命令行界面模块</a>
+          <ul>
+            <li><a href="#函数print_classification_results">函数：print_classification_results()</a></li>
+            <li><a href="#函数print_multiple_analysis_results">函数：print_multiple_analysis_results()</a></li>
+            <li><a href="#函数main">函数：main()</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#完整工作流程">完整工作流程</a>
+      <ul>
+        <li><a href="#单张图像分析流程">单张图像分析流程</a></li>
+        <li><a href="#多张图像分析流程">多张图像分析流程</a></li>
+      </ul>
+    </li>
+    <li><a href="#api请求格式">API请求格式</a>
+      <ul>
+        <li><a href="#vlm-api-请求示例">VLM API 请求示例</a></li>
+        <li><a href="#vlm-api-响应示例">VLM API 响应示例</a></li>
+      </ul>
+    </li>
+    <li><a href="#错误处理">错误处理</a></li>
+    <li><a href="#配置参数">配置参数</a>
+      <ul>
+        <li><a href="#vlm-api-配置">VLM API 配置</a></li>
+        <li><a href="#分类参数">分类参数</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+      </div>
+    </dialog></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.152.2"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.0-alpha.3-20251128065536-6d00e42b"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i></div><div id="toc-drawer-button" class="fixed-button toc-drawer-button d-none" role="button" aria-label="Contents"><i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/json-viewer-element/json-viewer-element.umd.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config/cf040ad31ef698fc6bfd191fc0a5370b.js" defer></script><script src="/js/theme.min.js" defer></script></body>
+</html>
