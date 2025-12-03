@@ -6,15 +6,8 @@
     <description>医学影像分析</description>
     <generator>Hugo 0.152.2 &amp; FixIt v0.4.0-alpha.3-20251128065536-6d00e42b</generator>
     <language>zn-ch</language>
-    <lastBuildDate>Mon, 01 Dec 2025 20:47:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 20:40:14 +0800</lastBuildDate>
     <atom:link href="https://nazelto.github.io/medical-imaging/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>https://nazelto.github.io/medical-imaging/posts/test/</link>
-      <pubDate>Mon, 01 Dec 2025 20:47:57 +0800</pubDate>
-      <guid>https://nazelto.github.io/medical-imaging/posts/test/</guid>
-      <description>&lt;p&gt;此处内容将会出现在摘要（summary）里&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Medical_imaging</title>
       <link>https://nazelto.github.io/medical-imaging/posts/medical-imaging/</link>

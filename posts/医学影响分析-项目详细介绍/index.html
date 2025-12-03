@@ -1,0 +1,2740 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zn-ch">
+  <head><script src="/medical-imaging/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=medical-imaging/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title> - 医学影像分析</title><meta name="author" content="">
+<meta name="description" content="医疗影像分析系统 - 项目详细介绍 项目概述 这是一个基于视觉语言模型（VLM）的医疗影像智能分析系统，能够对医学影像（如X光片、CT扫描、MRI等）进行自动分类、特征提取和诊断辅助。系统采用前后端分离架构，提供友好的Web界面和强大的命令行工具。
+">
+  <meta itemprop="name" content="医学影像分析">
+  <meta itemprop="description" content="医疗影像分析系统 - 项目详细介绍 项目概述 这是一个基于视觉语言模型（VLM）的医疗影像智能分析系统，能够对医学影像（如X光片、CT扫描、MRI等）进行自动分类、特征提取和诊断辅助。系统采用前后端分离架构，提供友好的Web界面和强大的命令行工具。">
+  <meta itemprop="wordCount" content="2420"><meta property="og:url" content="http://localhost:1313/medical-imaging/posts/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90-%E9%A1%B9%E7%9B%AE%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/">
+  <meta property="og:site_name" content="医学影像分析">
+  <meta property="og:title" content="医学影像分析">
+  <meta property="og:description" content="医疗影像分析系统 - 项目详细介绍 项目概述 这是一个基于视觉语言模型（VLM）的医疗影像智能分析系统，能够对医学影像（如X光片、CT扫描、MRI等）进行自动分类、特征提取和诊断辅助。系统采用前后端分离架构，提供友好的Web界面和强大的命令行工具。">
+  <meta property="og:locale" content="zn_ch">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="医学影像分析">
+  <meta name="twitter:description" content="医疗影像分析系统 - 项目详细介绍 项目概述 这是一个基于视觉语言模型（VLM）的医疗影像智能分析系统，能够对医学影像（如X光片、CT扫描、MRI等）进行自动分类、特征提取和诊断辅助。系统采用前后端分离架构，提供友好的Web界面和强大的命令行工具。">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/medical-imaging/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/medical-imaging/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/medical-imaging/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/medical-imaging/apple-touch-icon.png"><link rel="mask-icon" href="/medical-imaging/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/medical-imaging/posts/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90-%E9%A1%B9%E7%9B%AE%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/" title=" - 医学影像分析" /><link rel="next" type="text/html" href="http://localhost:1313/medical-imaging/posts/medical-imaging/" title="Medical_imaging" /><link rel="stylesheet" href="/medical-imaging/css/config.min.css"><link rel="stylesheet" href="/medical-imaging/css/style.min.css"><link rel="preload" href="/medical-imaging/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/medical-imaging/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/medical-imaging/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/medical-imaging/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "",
+    "inLanguage": "zn-ch",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/medical-imaging\/posts\/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90-%E9%A1%B9%E7%9B%AE%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D\/"
+    },"genre": "posts","wordcount":  2420 ,
+    "url": "http:\/\/localhost:1313\/medical-imaging\/posts\/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90-%E9%A1%B9%E7%9B%AE%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D\/","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Author"
+      },"description": ""
+  }
+  </script><script src="/medical-imaging/js/head/color-scheme.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/medical-imaging/" title="医学影像分析"><span class="header-title-text">医学影像分析</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/medical-imaging/archives/"><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Archives</a></li><li class="menu-item">
+              <a class="menu-link" href="/medical-imaging/categories/"><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/medical-imaging/tags/"><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" role="button" aria-label="Switch Theme" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/medical-imaging/" title="医学影像分析"><span class="header-title-text">医学影像分析</span></a><span class="header-subtitle"></span></div>
+      <div class="theme-switch" role="button" aria-label="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></div>
+      <div class="menu-toggle" id="menu-toggle-mobile" role="button" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/medical-imaging/archives/"><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Archives</a></li><li class="menu-item"><a class="menu-link" href="/medical-imaging/categories/"><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item"><a class="menu-link" href="/medical-imaging/tags/"><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Anonymous</span></span></div><div class="post-meta-line"><span title="published on 0001-01-01 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="2420 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 2500 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>12 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#项目概述">项目概述</a></li>
+    <li><a href="#一后端系统详解">一、后端系统详解</a>
+      <ul>
+        <li><a href="#11-整体架构">1.1 整体架构</a></li>
+        <li><a href="#12-核心模块功能详解">1.2 核心模块功能详解</a>
+          <ul>
+            <li><a href="#121-vlm-api客户端-api_clientpy">1.2.1 VLM API客户端 (<code>api_client.py</code>)</a></li>
+            <li><a href="#122-医学影像分析器-analyzerpy">1.2.2 医学影像分析器 (<code>analyzer.py</code>)</a></li>
+            <li><a href="#123-工具函数-utilspy">1.2.3 工具函数 (<code>utils.py</code>)</a></li>
+            <li><a href="#124-类型定义-typespy">1.2.4 类型定义 (<code>types.py</code>)</a></li>
+          </ul>
+        </li>
+        <li><a href="#13-django-web服务层">1.3 Django Web服务层</a>
+          <ul>
+            <li><a href="#131-业务服务-servicespy">1.3.1 业务服务 (<code>services.py</code>)</a></li>
+            <li><a href="#132-api视图-viewspy">1.3.2 API视图 (<code>views.py</code>)</a></li>
+            <li><a href="#133-django配置-settingspy">1.3.3 Django配置 (<code>settings.py</code>)</a></li>
+          </ul>
+        </li>
+        <li><a href="#14-命令行接口-clipy">1.4 命令行接口 (<code>cli.py</code>)</a></li>
+        <li><a href="#15-后端调用关系图">1.5 后端调用关系图</a></li>
+      </ul>
+    </li>
+    <li><a href="#二前端系统详解">二、前端系统详解</a>
+      <ul>
+        <li><a href="#21-整体架构">2.1 整体架构</a></li>
+        <li><a href="#22-核心组件详解">2.2 核心组件详解</a>
+          <ul>
+            <li><a href="#221-文件上传组件-fileuploadtsx">2.2.1 文件上传组件 (<code>FileUpload.tsx</code>)</a></li>
+            <li><a href="#222-多图结果展示组件-multipleresultsviewtsx">2.2.2 多图结果展示组件 (<code>MultipleResultsView.tsx</code>)</a></li>
+            <li><a href="#223-统计图表组件-statisticscharttsx">2.2.3 统计图表组件 (<code>StatisticsChart.tsx</code>)</a></li>
+            <li><a href="#224-导出按钮组件-exportbuttontsx">2.2.4 导出按钮组件 (<code>ExportButton.tsx</code>)</a></li>
+            <li><a href="#225-主分析页面-analysispagetsx">2.2.5 主分析页面 (<code>AnalysisPage.tsx</code>)</a></li>
+          </ul>
+        </li>
+        <li><a href="#23-api服务层-apits">2.3 API服务层 (<code>api.ts</code>)</a></li>
+        <li><a href="#24-typescript类型定义-typesindexts">2.4 TypeScript类型定义 (<code>types/index.ts</code>)</a></li>
+        <li><a href="#25-样式设计">2.5 样式设计</a></li>
+        <li><a href="#26-前端调用关系图">2.6 前端调用关系图</a></li>
+      </ul>
+    </li>
+    <li><a href="#三系统集成与部署">三、系统集成与部署</a>
+      <ul>
+        <li><a href="#31-开发环境启动">3.1 开发环境启动</a></li>
+        <li><a href="#32-api代理配置">3.2 API代理配置</a></li>
+        <li><a href="#33-生产环境部署">3.3 生产环境部署</a></li>
+        <li><a href="#34-环境变量配置">3.4 环境变量配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#四核心功能实现原理">四、核心功能实现原理</a>
+      <ul>
+        <li><a href="#41-图像分类原理">4.1 图像分类原理</a></li>
+        <li><a href="#42-批量分析与分组原理">4.2 批量分析与分组原理</a></li>
+        <li><a href="#43-目标检测原理">4.3 目标检测原理</a></li>
+        <li><a href="#44-临时文件管理原理">4.4 临时文件管理原理</a></li>
+      </ul>
+    </li>
+    <li><a href="#五性能优化策略">五、性能优化策略</a>
+      <ul>
+        <li><a href="#51-后端优化">5.1 后端优化</a></li>
+        <li><a href="#52-前端优化">5.2 前端优化</a></li>
+        <li><a href="#53-网络优化">5.3 网络优化</a></li>
+      </ul>
+    </li>
+    <li><a href="#六错误处理机制">六、错误处理机制</a>
+      <ul>
+        <li><a href="#61-后端错误处理">6.1 后端错误处理</a></li>
+        <li><a href="#62-前端错误处理">6.2 前端错误处理</a></li>
+      </ul>
+    </li>
+    <li><a href="#七安全性考虑">七、安全性考虑</a>
+      <ul>
+        <li><a href="#71-文件上传安全">7.1 文件上传安全</a></li>
+        <li><a href="#72-api安全">7.2 API安全</a></li>
+        <li><a href="#73-数据隐私">7.3 数据隐私</a></li>
+      </ul>
+    </li>
+    <li><a href="#八测试策略">八、测试策略</a>
+      <ul>
+        <li><a href="#81-后端测试">8.1 后端测试</a></li>
+        <li><a href="#82-前端测试未实现建议">8.2 前端测试（未实现，建议）</a></li>
+      </ul>
+    </li>
+    <li><a href="#九扩展性设计">九、扩展性设计</a>
+      <ul>
+        <li><a href="#91-支持新的vlm模型">9.1 支持新的VLM模型</a></li>
+        <li><a href="#92-添加新的分析功能">9.2 添加新的分析功能</a></li>
+        <li><a href="#93-多语言支持">9.3 多语言支持</a></li>
+        <li><a href="#94-数据库集成可选">9.4 数据库集成（可选）</a></li>
+      </ul>
+    </li>
+    <li><a href="#十常见问题与解决方案">十、常见问题与解决方案</a>
+      <ul>
+        <li><a href="#101-api调用失败">10.1 API调用失败</a></li>
+        <li><a href="#102-图像无法显示">10.2 图像无法显示</a></li>
+        <li><a href="#103-内存占用过高">10.3 内存占用过高</a></li>
+        <li><a href="#104-分析速度慢">10.4 分析速度慢</a></li>
+      </ul>
+    </li>
+    <li><a href="#十一总结">十一、总结</a>
+      <ul>
+        <li><a href="#111-系统优势">11.1 系统优势</a></li>
+        <li><a href="#112-技术亮点">11.2 技术亮点</a></li>
+        <li><a href="#113-未来改进方向">11.3 未来改进方向</a></li>
+      </ul>
+    </li>
+    <li><a href="#附录关键代码片段">附录：关键代码片段</a>
+      <ul>
+        <li><a href="#a1-vlm-api调用示例">A.1 VLM API调用示例</a></li>
+        <li><a href="#a2-react组件状态管理示例">A.2 React组件状态管理示例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h1 class="heading-element" id="医疗影像分析系统---项目详细介绍"><span>医疗影像分析系统 - 项目详细介绍</span>
+  <a href="#%e5%8c%bb%e7%96%97%e5%bd%b1%e5%83%8f%e5%88%86%e6%9e%90%e7%b3%bb%e7%bb%9f---%e9%a1%b9%e7%9b%ae%e8%af%a6%e7%bb%86%e4%bb%8b%e7%bb%8d" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h1><h2 class="heading-element" id="项目概述"><span>项目概述</span>
+  <a href="#%e9%a1%b9%e7%9b%ae%e6%a6%82%e8%bf%b0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>这是一个基于视觉语言模型（VLM）的医疗影像智能分析系统，能够对医学影像（如X光片、CT扫描、MRI等）进行自动分类、特征提取和诊断辅助。系统采用前后端分离架构，提供友好的Web界面和强大的命令行工具。</p>
+<p><strong>核心技术栈：</strong></p>
+<ul>
+<li><strong>后端：</strong> Python 3.10+, Django 5.2, Pillow</li>
+<li><strong>前端：</strong> React 19, TypeScript, Vite, Fluent UI v9</li>
+<li><strong>AI模型：</strong> 阿里云通义千问 VLM (qwen3-vl-plus)</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="一后端系统详解"><span>一、后端系统详解</span>
+  <a href="#%e4%b8%80%e5%90%8e%e7%ab%af%e7%b3%bb%e7%bb%9f%e8%af%a6%e8%a7%a3" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="11-整体架构"><span>1.1 整体架构</span>
+  <a href="#11-%e6%95%b4%e4%bd%93%e6%9e%b6%e6%9e%84" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>后端采用分层架构设计：</p>
+<pre tabindex="0"><code>src/medical_imaging/
+├── core/              # 核心业务逻辑层
+│   ├── analyzer.py    # 医学影像分析器
+│   ├── api_client.py  # VLM API客户端
+│   ├── types.py       # 类型定义
+│   └── utils.py       # 工具函数
+├── django_app/        # Web服务层
+│   ├── analysis/      # 分析应用
+│   │   ├── views.py   # API视图
+│   │   ├── services.py # 业务服务
+│   │   └── urls.py    # 路由配置
+│   └── config/        # Django配置
+└── cli.py             # 命令行接口</code></pre><hr>
+<h3 class="heading-element" id="12-核心模块功能详解"><span>1.2 核心模块功能详解</span>
+  <a href="#12-%e6%a0%b8%e5%bf%83%e6%a8%a1%e5%9d%97%e5%8a%9f%e8%83%bd%e8%af%a6%e8%a7%a3" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 class="heading-element" id="121-vlm-api客户端-api_clientpy"><span>1.2.1 VLM API客户端 (<code>api_client.py</code>)</span>
+  <a href="#121-vlm-api%e5%ae%a2%e6%88%b7%e7%ab%af-api_clientpy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>类：<code>VLMClient</code></strong></p>
+<p><strong>作用：</strong> 封装与阿里云通义千问VLM服务的HTTP通信，负责发送图像和提示词，接收AI分析结果。</p>
+<p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>__init__(api_key, base_url, model_name)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 初始化客户端，创建HTTP会话</li>
+<li><strong>参数：</strong>
+<ul>
+<li><code>api_key</code>: API密钥（默认：sk-854d708e4615444689646f3f7f979b8b）</li>
+<li><code>base_url</code>: API基础URL（默认：https://dashscope.aliyuncs.com/compatible-mode/v1）</li>
+<li><code>model_name</code>: 模型名称（默认：qwen3-vl-plus）</li>
+</ul>
+</li>
+<li><strong>实现原理：</strong> 使用<code>requests.Session()</code>创建可复用的HTTP会话，设置认证头和内容类型，提高性能</li>
+<li><strong>为什么这么写：</strong> Session对象可以复用TCP连接，避免每次请求都建立新连接，提升效率</li>
+</ul>
+</li>
+<li>
+<p><strong><code>call(messages, max_tokens, temperature)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 调用VLM API进行推理</li>
+<li><strong>参数：</strong>
+<ul>
+<li><code>messages</code>: 消息列表，包含文本提示词和Base64编码的图像</li>
+<li><code>max_tokens</code>: 最大生成令牌数（默认2000）</li>
+<li><code>temperature</code>: 生成温度（默认0.3，低随机性）</li>
+</ul>
+</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>构建API端点URL（base_url + &ldquo;/chat/completions&rdquo;）</li>
+<li>组装请求负载（模型名、消息、参数）</li>
+<li>发送POST请求（超时120秒）</li>
+<li>解析响应JSON，提取<code>choices[0].message.content</code></li>
+</ol>
+</li>
+<li><strong>返回值：</strong> 模型生成的文本响应</li>
+<li><strong>为什么这么写：</strong> 遵循OpenAI兼容的API格式，便于切换不同的VLM服务提供商</li>
+</ul>
+</li>
+<li>
+<p><strong><code>close()</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 关闭HTTP会话，释放资源</li>
+<li><strong>调用时机：</strong> 分析完成后或程序退出前</li>
+<li><strong>为什么需要：</strong> 避免资源泄漏，确保连接正确关闭</li>
+</ul>
+</li>
+</ol>
+<p><strong>上下文管理器支持：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> VLMClient(api_key, base_url, model_name) <span style="color:#66d9ef">as</span> client:
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>call(messages)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 自动调用close()</span></span></span></code></pre></div><hr>
+<h4 class="heading-element" id="122-医学影像分析器-analyzerpy"><span>1.2.2 医学影像分析器 (<code>analyzer.py</code>)</span>
+  <a href="#122-%e5%8c%bb%e5%ad%a6%e5%bd%b1%e5%83%8f%e5%88%86%e6%9e%90%e5%99%a8-analyzerpy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>类：<code>MedicalImageAnalyzer</code></strong></p>
+<p><strong>作用：</strong> 系统的核心引擎，提供医学影像分类、目标检测、批量分析等功能。</p>
+<p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>classify_image(image_path, categories)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 对单张医学影像进行分类</li>
+<li><strong>参数：</strong>
+<ul>
+<li><code>image_path</code>: 图像文件路径</li>
+<li><code>categories</code>: 可选的分类类别列表（如[&ldquo;Normal&rdquo;, &ldquo;Pneumonia&rdquo;]）</li>
+</ul>
+</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>验证图像文件是否存在</li>
+<li>调用<code>encode_image_to_base64()</code>将图像编码为Base64</li>
+<li>根据是否提供类别列表构建不同的提示词：
+<ul>
+<li><strong>有类别：</strong> 要求模型在指定类别中选择</li>
+<li><strong>无类别：</strong> 开放式分类，模型自由判断</li>
+</ul>
+</li>
+<li>调用<code>VLMClient.call()</code>发送请求</li>
+<li>使用<code>extract_json_from_text()</code>从响应中提取JSON结果</li>
+</ol>
+</li>
+<li><strong>返回值：</strong> 包含以下字段的字典
+<ul>
+<li><code>success</code>: 是否成功</li>
+<li><code>image_path</code>: 图像路径</li>
+<li><code>result</code>: 分类结果（image_type, category, confidence, features, reasoning, abnormal）</li>
+<li><code>full_response</code>: 完整响应文本</li>
+</ul>
+</li>
+<li><strong>为什么这么写：</strong>
+<ul>
+<li>灵活支持有监督和无监督分类</li>
+<li>提示词工程确保模型返回结构化JSON</li>
+<li>异常处理确保系统稳定性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>detect_objects(image_path, target_objects, classification_result)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 在医学影像中检测目标对象（如病灶、肿瘤）</li>
+<li><strong>参数：</strong>
+<ul>
+<li><code>image_path</code>: 图像文件路径</li>
+<li><code>target_objects</code>: 可选的目标对象列表</li>
+<li><code>classification_result</code>: 可选的分类结果，用于提供上下文</li>
+</ul>
+</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>验证图像文件</li>
+<li>编码图像为Base64</li>
+<li>如果提供了分类结果，提取上下文信息：
+<ul>
+<li>如果分类为异常（非&quot;正常&quot;），添加特殊提示强调检测异常区域</li>
+</ul>
+</li>
+<li>构建提示词要求模型返回边界框坐标</li>
+<li>调用VLM API</li>
+<li>提取JSON结果</li>
+</ol>
+</li>
+<li><strong>返回值：</strong> 包含检测到的对象列表，每个对象包含：
+<ul>
+<li><code>type</code>: 对象类型</li>
+<li><code>bbox</code>: 边界框坐标[x_min, y_min, x_max, y_max]（归一化到0-1）</li>
+<li><code>confidence</code>: 置信度</li>
+<li><code>size</code>: 大小描述</li>
+<li><code>description</code>: 详细描述</li>
+</ul>
+</li>
+<li><strong>为什么这么写：</strong>
+<ul>
+<li>利用分类结果作为上下文，提高检测准确性</li>
+<li>归一化坐标便于不同尺寸图像的处理</li>
+<li>特殊提示确保模型不会遗漏小病灶</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>analyze_images(image_paths, categories)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 分析单张或多张医学影像（智能路由）</li>
+<li><strong>参数：</strong>
+<ul>
+<li><code>image_paths</code>: 单个路径、路径列表或文件夹路径</li>
+<li><code>categories</code>: 可选的分类类别列表</li>
+</ul>
+</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>规范化输入：
+<ul>
+<li>如果是字符串且为文件夹，调用<code>get_image_files_from_folder()</code>获取所有图像</li>
+<li>如果是单个文件，转换为列表</li>
+</ul>
+</li>
+<li>验证所有文件是否存在</li>
+<li>根据图像数量选择分析方式：
+<ul>
+<li><strong>单张：</strong> 调用<code>_analyze_single_image()</code></li>
+<li><strong>多张：</strong> 调用<code>_analyze_multiple_images()</code></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>为什么这么写：</strong> 提供统一的入口点，自动处理不同输入格式，简化调用</li>
+</ul>
+</li>
+<li>
+<p><strong><code>_analyze_multiple_images(image_paths, categories)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 批量分析多张图像，自动分组和生成解释</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>对每张图像调用<code>classify_image()</code></li>
+<li>按诊断类别对结果进行分组：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>grouped_images <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Pneumonia&#34;</span>: [result1, result2, <span style="color:#f92672">...</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Normal&#34;</span>: [result3, result4, <span style="color:#f92672">...</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+<li>调用<code>_explain_classification_groups()</code>为每个类别生成解释</li>
+<li>计算统计信息（类别数、分布）</li>
+</ol>
+</li>
+<li><strong>返回值：</strong> 包含以下字段的字典
+<ul>
+<li><code>total_images</code>: 图像总数</li>
+<li><code>classification_results</code>: 所有分类结果列表</li>
+<li><code>grouped_by_category</code>: 按类别分组的结果</li>
+<li><code>explanations</code>: 每个类别的解释说明</li>
+<li><code>statistics</code>: 统计信息</li>
+</ul>
+</li>
+<li><strong>为什么这么写：</strong>
+<ul>
+<li>自动分组便于医生快速查看相同诊断的图像</li>
+<li>统计信息提供整体概览</li>
+<li>解释说明帮助理解分类依据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>_explain_classification_groups(grouped_images)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 为每个分类类别生成解释说明</li>
+<li><strong>参数：</strong> 按类别分组的图像结果字典</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>遍历每个类别</li>
+<li>提取该类别中所有图像的特征、推理、置信度</li>
+<li>构建包含所有图像信息的提示词</li>
+<li>调用VLM API生成解释，要求分析：
+<ul>
+<li>共同特征</li>
+<li>分类原因</li>
+<li>相似性</li>
+<li>差异性</li>
+<li>总结</li>
+</ul>
+</li>
+<li>提取JSON结果</li>
+</ol>
+</li>
+<li><strong>返回值：</strong> 每个类别的解释字典</li>
+<li><strong>为什么这么写：</strong>
+<ul>
+<li>利用VLM的推理能力生成人类可读的解释</li>
+<li>帮助医生理解为什么这些图像被分为同一类</li>
+<li>识别类别内的细微差异</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 class="heading-element" id="123-工具函数-utilspy"><span>1.2.3 工具函数 (<code>utils.py</code>)</span>
+  <a href="#123-%e5%b7%a5%e5%85%b7%e5%87%bd%e6%95%b0-utilspy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>encode_image_to_base64(image_path)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 将图像文件编码为Base64字符串</li>
+<li><strong>实现：</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(image_path, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> image_file:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> base64<span style="color:#f92672">.</span>b64encode(image_file<span style="color:#f92672">.</span>read())<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)</span></span></code></pre></div></li>
+<li><strong>为什么需要：</strong> VLM API要求图像以Base64格式传输，便于在JSON中嵌入</li>
+</ul>
+</li>
+<li>
+<p><strong><code>extract_json_from_text(text)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 从VLM响应文本中提取JSON对象</li>
+<li><strong>实现原理：</strong>
+<ol>
+<li>查找第一个<code>{</code>的位置</li>
+<li>查找最后一个<code>}</code>的位置</li>
+<li>提取中间部分并解析为JSON</li>
+<li>如果失败，返回<code>{&quot;raw_response&quot;: text}</code></li>
+</ol>
+</li>
+<li><strong>为什么需要：</strong> VLM可能在JSON前后添加额外文本，需要智能提取</li>
+</ul>
+</li>
+<li>
+<p><strong><code>get_image_files_from_folder(folder_path)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 递归扫描文件夹，获取所有图像文件</li>
+<li><strong>支持格式：</strong> .jpg, .jpeg, .png, .bmp, .gif, .webp, .tiff, .tif</li>
+<li><strong>实现：</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>image_files <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    str(file_path)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> file_path <span style="color:#f92672">in</span> folder<span style="color:#f92672">.</span>rglob(<span style="color:#e6db74">&#34;*&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> file_path<span style="color:#f92672">.</span>is_file() <span style="color:#f92672">and</span> file_path<span style="color:#f92672">.</span>suffix<span style="color:#f92672">.</span>lower() <span style="color:#f92672">in</span> image_extensions
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> sorted(image_files)</span></span></code></pre></div></li>
+<li><strong>为什么这么写：</strong>
+<ul>
+<li><code>rglob(&quot;*&quot;)</code>递归查找所有文件</li>
+<li>排序确保结果一致性</li>
+<li>支持多种医学影像格式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 class="heading-element" id="124-类型定义-typespy"><span>1.2.4 类型定义 (<code>types.py</code>)</span>
+  <a href="#124-%e7%b1%bb%e5%9e%8b%e5%ae%9a%e4%b9%89-typespy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>作用：</strong> 使用TypedDict定义数据结构，提供类型提示和代码可读性。</p>
+<p><strong>核心类型：</strong></p>
+<ol>
+<li>
+<p><strong><code>ClassificationResult</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClassificationResult</span>(TypedDict, total<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>):
+</span></span><span style="display:flex;"><span>    success: bool
+</span></span><span style="display:flex;"><span>    image_path: str
+</span></span><span style="display:flex;"><span>    result: dict[str, Any]
+</span></span><span style="display:flex;"><span>    full_response: str
+</span></span><span style="display:flex;"><span>    error: str</span></span></code></pre></div></li>
+<li>
+<p><strong><code>DetectionResult</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DetectionResult</span>(TypedDict, total<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>):
+</span></span><span style="display:flex;"><span>    success: bool
+</span></span><span style="display:flex;"><span>    image_path: str
+</span></span><span style="display:flex;"><span>    result: dict[str, Any]
+</span></span><span style="display:flex;"><span>    full_response: str
+</span></span><span style="display:flex;"><span>    error: str</span></span></code></pre></div></li>
+<li>
+<p><strong><code>AnalysisResult</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AnalysisResult</span>(TypedDict, total<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>):
+</span></span><span style="display:flex;"><span>    total_images: int
+</span></span><span style="display:flex;"><span>    classification_results: list[ClassificationResult]
+</span></span><span style="display:flex;"><span>    grouped_by_category: dict[str, list[ClassificationResult]]
+</span></span><span style="display:flex;"><span>    explanations: dict[str, Any]
+</span></span><span style="display:flex;"><span>    statistics: dict[str, Any]</span></span></code></pre></div></li>
+</ol>
+<p><strong>为什么使用TypedDict：</strong></p>
+<ul>
+<li>提供类型检查，减少运行时错误</li>
+<li>保持字典的灵活性</li>
+<li><code>total=False</code>允许所有字段可选</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="13-django-web服务层"><span>1.3 Django Web服务层</span>
+  <a href="#13-django-web%e6%9c%8d%e5%8a%a1%e5%b1%82" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 class="heading-element" id="131-业务服务-servicespy"><span>1.3.1 业务服务 (<code>services.py</code>)</span>
+  <a href="#131-%e4%b8%9a%e5%8a%a1%e6%9c%8d%e5%8a%a1-servicespy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>类：<code>FileHandlerService</code></strong></p>
+<p><strong>作用：</strong> 处理文件上传、验证和临时存储。</p>
+<p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>validate_file_format(filename)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 验证文件格式是否支持</li>
+<li><strong>支持格式：</strong> jpg, jpeg, png, dcm, dicom, bmp, tiff, tif</li>
+<li><strong>返回值：</strong> <code>(is_valid, error_message)</code></li>
+<li><strong>为什么需要：</strong> 防止上传不支持的文件类型，提前拦截错误</li>
+</ul>
+</li>
+<li>
+<p><strong><code>save_temp_file(uploaded_file)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 保存上传的文件到临时目录</li>
+<li><strong>实现流程：</strong>
+<ol>
+<li>验证文件格式</li>
+<li>生成唯一文件名（UUID + 原扩展名）</li>
+<li>分块写入文件</li>
+</ol>
+</li>
+<li><strong>为什么使用UUID：</strong> 避免文件名冲突，确保唯一性</li>
+</ul>
+</li>
+<li>
+<p><strong><code>cleanup_old_files(max_age_seconds)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 清理超过指定时间的临时文件</li>
+<li><strong>默认时间：</strong> 3600秒（1小时）</li>
+<li><strong>实现：</strong> 遍历临时目录，检查文件修改时间，删除过期文件</li>
+<li><strong>为什么需要：</strong> 防止临时文件堆积，节省磁盘空间</li>
+</ul>
+</li>
+</ol>
+<p><strong>类：<code>AnalysisService</code></strong></p>
+<p><strong>作用：</strong> 封装医学影像分析业务逻辑，连接Django和核心分析器。</p>
+<p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>__init__()</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 初始化分析服务</li>
+<li><strong>实现：</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>api_key <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;VLM_API_KEY&#34;</span>, <span style="color:#e6db74">&#34;默认值&#34;</span>)
+</span></span><span style="display:flex;"><span>base_url <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;VLM_BASE_URL&#34;</span>, <span style="color:#e6db74">&#34;默认值&#34;</span>)
+</span></span><span style="display:flex;"><span>model_name <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;VLM_MODEL_NAME&#34;</span>, <span style="color:#e6db74">&#34;默认值&#34;</span>)
+</span></span><span style="display:flex;"><span>self<span style="color:#f92672">.</span>analyzer <span style="color:#f92672">=</span> MedicalImageAnalyzer(api_key, base_url, model_name)</span></span></code></pre></div></li>
+<li><strong>为什么这么写：</strong> 从环境变量读取配置，便于部署时修改，提供默认值确保开发环境可用</li>
+</ul>
+</li>
+<li>
+<p><strong><code>analyze_single_image(image_path, categories)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 分析单张图像</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>调用<code>analyzer.classify_image()</code></li>
+<li>转换绝对路径为相对路径（用于前端访问）</li>
+<li>格式化返回结果</li>
+</ol>
+</li>
+<li><strong>返回格式：</strong>
+<json-viewer value="&#34;{\r\n  \&#34;success\&#34;: true,\r\n  \&#34;type\&#34;: \&#34;single\&#34;,\r\n  \&#34;result\&#34;: {\r\n    \&#34;image_path\&#34;: \&#34;temp/uuid.jpg\&#34;,\r\n    \&#34;image_type\&#34;: \&#34;X光片\&#34;,\r\n    \&#34;category\&#34;: \&#34;Pneumonia\&#34;,\r\n    \&#34;confidence\&#34;: 85.5,\r\n    \&#34;features\&#34;: \&#34;...\&#34;,\r\n    \&#34;reasoning\&#34;: \&#34;...\&#34;,\r\n    \&#34;abnormal\&#34;: true\r\n  }\r\n}&#34;" expand-depth="1" boxed copyable="{&#34;copiedText&#34;:&#34;Copied&#34;,&#34;copyText&#34;:&#34;Copy&#34;}"></json-viewer></li>
+</ul>
+</li>
+<li>
+<p><strong><code>analyze_multiple_images(image_paths, categories)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 分析多张图像</li>
+<li><strong>调用流程：</strong>
+<ol>
+<li>验证所有文件存在</li>
+<li>调用<code>analyzer.analyze_images()</code></li>
+<li>转换所有图像路径为相对路径</li>
+<li>格式化解释说明</li>
+</ol>
+</li>
+<li><strong>返回格式：</strong>
+<json-viewer value="&#34;{\r\n  \&#34;success\&#34;: true,\r\n  \&#34;type\&#34;: \&#34;multiple\&#34;,\r\n  \&#34;total_images\&#34;: 10,\r\n  \&#34;grouped_by_category\&#34;: {...},\r\n  \&#34;explanations\&#34;: {...},\r\n  \&#34;statistics\&#34;: {...}\r\n}&#34;" expand-depth="1" boxed copyable="{&#34;copiedText&#34;:&#34;Copied&#34;,&#34;copyText&#34;:&#34;Copy&#34;}"></json-viewer></li>
+</ul>
+</li>
+<li>
+<p><strong><code>_get_relative_image_path(absolute_path)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 转换绝对路径为相对路径</li>
+<li><strong>实现：</strong> 计算相对于项目根目录的路径</li>
+<li><strong>为什么需要：</strong> 前端需要通过URL访问图像，不能使用绝对路径</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 class="heading-element" id="132-api视图-viewspy"><span>1.3.2 API视图 (<code>views.py</code>)</span>
+  <a href="#132-api%e8%a7%86%e5%9b%be-viewspy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>核心视图函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>analyze_images(request)</code></strong></p>
+<ul>
+<li><strong>HTTP方法：</strong> POST</li>
+<li><strong>路由：</strong> <code>/api/analyze/</code></li>
+<li><strong>功能：</strong> 处理图像上传和分析请求</li>
+<li><strong>请求格式：</strong>
+<ul>
+<li>Content-Type: multipart/form-data</li>
+<li>images: File[] - 一个或多个图像文件</li>
+<li>categories: string (JSON数组) - 可选的分类类别</li>
+</ul>
+</li>
+<li><strong>处理流程：</strong>
+<ol>
+<li>获取上传的文件列表</li>
+<li>验证至少有一个文件</li>
+<li>解析categories参数（JSON字符串）</li>
+<li>初始化FileHandlerService和AnalysisService</li>
+<li>保存所有临时文件（验证格式）</li>
+<li>根据文件数量调用相应的分析方法</li>
+<li>返回分析结果（不立即删除临时文件，供前端显示）</li>
+</ol>
+</li>
+<li><strong>错误处理：</strong>
+<ul>
+<li>NO_FILES: 未上传文件</li>
+<li>INVALID_CATEGORIES: 类别格式无效</li>
+<li>INVALID_FILE_FORMAT: 文件格式不支持</li>
+<li>INTERNAL_ERROR: 服务器内部错误</li>
+</ul>
+</li>
+<li><strong>为什么不立即删除临时文件：</strong> 前端需要显示图像，文件由定时任务清理</li>
+</ul>
+</li>
+<li>
+<p><strong><code>get_categories(request)</code></strong></p>
+<ul>
+<li><strong>HTTP方法：</strong> GET</li>
+<li><strong>路由：</strong> <code>/api/categories/</code></li>
+<li><strong>功能：</strong> 获取预定义的分类类别</li>
+<li><strong>返回格式：</strong>
+<json-viewer value="&#34;{\r\n  \&#34;categories\&#34;: [\r\n    \&#34;Normal\&#34;,\r\n    \&#34;Pneumonia\&#34;,\r\n    \&#34;Tuberculosis\&#34;,\r\n    \&#34;Lung Cancer\&#34;,\r\n    \&#34;Other Abnormalities\&#34;\r\n  ]\r\n}&#34;" expand-depth="1" boxed copyable="{&#34;copiedText&#34;:&#34;Copied&#34;,&#34;copyText&#34;:&#34;Copy&#34;}"></json-viewer></li>
+<li><strong>为什么需要：</strong> 前端可以动态获取类别列表，便于扩展</li>
+</ul>
+</li>
+<li>
+<p><strong><code>export_results(request)</code></strong></p>
+<ul>
+<li><strong>HTTP方法：</strong> POST</li>
+<li><strong>路由：</strong> <code>/api/export/</code></li>
+<li><strong>功能：</strong> 导出分析结果为JSON文件</li>
+<li><strong>请求格式：</strong>
+<json-viewer value="&#34;{\r\n  \&#34;results\&#34;: {...}\r\n}&#34;" expand-depth="1" boxed copyable="{&#34;copiedText&#34;:&#34;Copied&#34;,&#34;copyText&#34;:&#34;Copy&#34;}"></json-viewer></li>
+<li><strong>返回：</strong> JSON文件下载（Content-Disposition: attachment）</li>
+<li><strong>为什么这么实现：</strong>
+<ul>
+<li>服务器端生成JSON确保格式正确</li>
+<li>使用attachment头触发浏览器下载</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 class="heading-element" id="133-django配置-settingspy"><span>1.3.3 Django配置 (<code>settings.py</code>)</span>
+  <a href="#133-django%e9%85%8d%e7%bd%ae-settingspy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>关键配置：</strong></p>
+<ol>
+<li>
+<p><strong>CORS设置</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>CORS_ALLOW_ALL_ORIGINS <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>CORS_ALLOW_CREDENTIALS <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span></span></span></code></pre></div><ul>
+<li><strong>作用：</strong> 允许前端跨域访问API</li>
+<li><strong>为什么需要：</strong> 前端运行在3000端口，后端在8000端口</li>
+</ul>
+</li>
+<li>
+<p><strong>文件上传设置</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>FILE_UPLOAD_MAX_MEMORY_SIZE <span style="color:#f92672">=</span> <span style="color:#ae81ff">52428800</span>  <span style="color:#75715e"># 50MB</span>
+</span></span><span style="display:flex;"><span>DATA_UPLOAD_MAX_MEMORY_SIZE <span style="color:#f92672">=</span> <span style="color:#ae81ff">52428800</span>  <span style="color:#75715e"># 50MB</span></span></span></code></pre></div><ul>
+<li><strong>作用：</strong> 限制上传文件大小</li>
+<li><strong>为什么是50MB：</strong> 医学影像通常较大，但需要限制防止滥用</li>
+</ul>
+</li>
+<li>
+<p><strong>临时文件设置</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>MEDIA_ROOT <span style="color:#f92672">=</span> BASE_DIR <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;temp&#34;</span>
+</span></span><span style="display:flex;"><span>MEDIA_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/temp/&#34;</span>
+</span></span><span style="display:flex;"><span>TEMP_FILE_LIFETIME <span style="color:#f92672">=</span> <span style="color:#ae81ff">3600</span>  <span style="color:#75715e"># 1小时</span></span></span></code></pre></div><ul>
+<li><strong>作用：</strong> 配置临时文件存储位置和生命周期</li>
+<li><strong>为什么1小时：</strong> 平衡用户体验和磁盘空间</li>
+</ul>
+</li>
+<li>
+<p><strong>无数据库配置</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DATABASES <span style="color:#f92672">=</span> {}</span></span></code></pre></div><ul>
+<li><strong>为什么不用数据库：</strong> 系统不需要持久化存储，简化部署</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="14-命令行接口-clipy"><span>1.4 命令行接口 (<code>cli.py</code>)</span>
+  <a href="#14-%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%8e%a5%e5%8f%a3-clipy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>主函数：<code>main()</code></strong></p>
+<p><strong>功能：</strong> 提供命令行方式分析医学影像。</p>
+<p><strong>调用流程：</strong></p>
+<ol>
+<li>打印欢迎信息</li>
+<li>初始化<code>MedicalImageAnalyzer</code></li>
+<li>定义分类类别列表</li>
+<li>获取图像路径：
+<ul>
+<li>优先从命令行参数获取：<code>python -m medical_imaging image.jpg</code></li>
+<li>否则交互式输入</li>
+</ul>
+</li>
+<li>验证路径是否存在</li>
+<li>调用<code>analyzer.analyze_images()</code></li>
+<li>根据结果类型选择打印函数：
+<ul>
+<li>单张：<code>print_classification_results()</code></li>
+<li>多张：<code>print_multiple_analysis_results()</code></li>
+</ul>
+</li>
+<li>异常处理和资源释放</li>
+</ol>
+<p><strong>辅助函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>print_classification_results(results)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 格式化打印单张图像分类结果</li>
+<li><strong>输出格式：</strong>
+<pre tabindex="0"><code>============================================================
+Classification Results
+============================================================
+
+Image path: image.jpg
+Image type: X光片
+
+【Image Feature Analysis】
+------------------------------------------------------------
+Key features:
+  肺部有明显的阴影区域...
+
+Analysis reasoning:
+  根据影像特征判断...
+
+【Classification Result】
+------------------------------------------------------------
+Diagnosis category: Pneumonia
+Confidence: 85.5%
+Abnormal: Yes
+
+============================================================</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong><code>print_multiple_analysis_results(results)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 格式化打印多张图像分析结果</li>
+<li><strong>输出内容：</strong>
+<ul>
+<li>总体统计信息</li>
+<li>类别分布</li>
+<li>每个类别的解释说明</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>为什么需要CLI：</strong></p>
+<ul>
+<li>便于批量处理</li>
+<li>适合自动化脚本</li>
+<li>无需启动Web服务</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="15-后端调用关系图"><span>1.5 后端调用关系图</span>
+  <a href="#15-%e5%90%8e%e7%ab%af%e8%b0%83%e7%94%a8%e5%85%b3%e7%b3%bb%e5%9b%be" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><pre tabindex="0"><code>用户请求
+    ↓
+Django Views (views.py)
+    ↓
+Analysis Service (services.py)
+    ↓
+Medical Image Analyzer (analyzer.py)
+    ↓
+VLM Client (api_client.py)
+    ↓
+阿里云通义千问 VLM API
+    ↓
+返回分析结果</code></pre><p><strong>数据流：</strong></p>
+<ol>
+<li>用户上传图像 → Django接收</li>
+<li>保存临时文件 → FileHandlerService</li>
+<li>编码为Base64 → utils.encode_image_to_base64()</li>
+<li>构建提示词 → MedicalImageAnalyzer</li>
+<li>调用VLM API → VLMClient.call()</li>
+<li>解析响应 → utils.extract_json_from_text()</li>
+<li>格式化结果 → AnalysisService</li>
+<li>返回前端 → Django Views</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="二前端系统详解"><span>二、前端系统详解</span>
+  <a href="#%e4%ba%8c%e5%89%8d%e7%ab%af%e7%b3%bb%e7%bb%9f%e8%af%a6%e8%a7%a3" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="21-整体架构"><span>2.1 整体架构</span>
+  <a href="#21-%e6%95%b4%e4%bd%93%e6%9e%b6%e6%9e%84" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>前端采用组件化架构设计：</p>
+<pre tabindex="0"><code>frontend/src/
+├── components/          # 可复用组件
+│   ├── FileUpload.tsx   # 文件上传组件
+│   ├── MultipleResultsView.tsx  # 多图结果展示
+│   ├── StatisticsChart.tsx      # 统计图表
+│   ├── ExportButton.tsx         # 导出按钮
+│   └── ErrorBoundary.tsx        # 错误边界
+├── pages/               # 页面组件
+│   └── AnalysisPage.tsx # 主分析页面
+├── services/            # API服务
+│   └── api.ts           # 后端API客户端
+├── types/               # TypeScript类型
+│   └── index.ts         # 类型定义
+├── App.tsx              # 应用根组件
+└── main.tsx             # 应用入口</code></pre><hr>
+<h3 class="heading-element" id="22-核心组件详解"><span>2.2 核心组件详解</span>
+  <a href="#22-%e6%a0%b8%e5%bf%83%e7%bb%84%e4%bb%b6%e8%af%a6%e8%a7%a3" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><h4 class="heading-element" id="221-文件上传组件-fileuploadtsx"><span>2.2.1 文件上传组件 (<code>FileUpload.tsx</code>)</span>
+  <a href="#221-%e6%96%87%e4%bb%b6%e4%b8%8a%e4%bc%a0%e7%bb%84%e4%bb%b6-fileuploadtsx" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>功能：</strong> 处理医学影像上传，支持拖放、文件验证和缩略图预览。</p>
+<p><strong>核心状态：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">isDragging</span>, <span style="color:#a6e22e">setIsDragging</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">filesWithPreviews</span>, <span style="color:#a6e22e">setFilesWithPreviews</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">FileWithPreview</span><span style="color:#960050;background-color:#1e0010">[]</span>&gt;([]);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">validationError</span>, <span style="color:#a6e22e">setValidationError</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">ValidationError</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">null</span>&gt;(<span style="color:#66d9ef">null</span>);</span></span></code></pre></div><p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>validateFile(file)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 验证文件格式和大小</li>
+<li><strong>验证规则：</strong>
+<ul>
+<li>支持格式：image/jpeg, image/jpg, image/png</li>
+<li>最大大小：50MB</li>
+</ul>
+</li>
+<li><strong>返回值：</strong> <code>ValidationError | null</code></li>
+<li><strong>为什么需要：</strong> 前端验证减少无效请求，提升用户体验</li>
+</ul>
+</li>
+<li>
+<p><strong><code>createPreview(file)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 生成图像预览</li>
+<li><strong>实现：</strong> 使用FileReader读取文件，转换为Data URL</li>
+<li><strong>返回值：</strong> Promise<!-- raw HTML omitted --></li>
+<li><strong>为什么使用Promise：</strong> FileReader是异步操作</li>
+</ul>
+</li>
+<li>
+<p><strong><code>handleFiles(newFiles)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 处理新上传的文件</li>
+<li><strong>流程：</strong>
+<ol>
+<li>验证所有文件</li>
+<li>为每个文件生成预览</li>
+<li>更新状态</li>
+<li>调用onChange回调通知父组件</li>
+</ol>
+</li>
+<li><strong>为什么使用async/await：</strong> 需要等待所有预览生成完成</li>
+</ul>
+</li>
+<li>
+<p><strong>拖放事件处理</strong></p>
+<ul>
+<li><code>handleDragEnter</code>: 进入拖放区域</li>
+<li><code>handleDragLeave</code>: 离开拖放区域</li>
+<li><code>handleDragOver</code>: 在拖放区域上方</li>
+<li><code>handleDrop</code>: 释放文件</li>
+<li><strong>为什么需要这些事件：</strong> 实现拖放上传，提供视觉反馈</li>
+</ul>
+</li>
+</ol>
+<p><strong>UI特性：</strong></p>
+<ul>
+<li>拖放区域高亮显示</li>
+<li>缩略图网格布局</li>
+<li>文件信息显示（名称、大小）</li>
+<li>移除按钮</li>
+<li>错误提示</li>
+</ul>
+<p><strong>为什么使用memo：</strong> 避免不必要的重新渲染，提升性能</p>
+<hr>
+<h4 class="heading-element" id="222-多图结果展示组件-multipleresultsviewtsx"><span>2.2.2 多图结果展示组件 (<code>MultipleResultsView.tsx</code>)</span>
+  <a href="#222-%e5%a4%9a%e5%9b%be%e7%bb%93%e6%9e%9c%e5%b1%95%e7%a4%ba%e7%bb%84%e4%bb%b6-multipleresultsviewtsx" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>功能：</strong> 展示多张图像的分组分析结果。</p>
+<p><strong>核心状态：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">expandedCategories</span>, <span style="color:#a6e22e">setExpandedCategories</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">Set</span>&lt;<span style="color:#f92672">string</span>&gt;&gt;(<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>());
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">expandedImages</span>, <span style="color:#a6e22e">setExpandedImages</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">Set</span>&lt;<span style="color:#f92672">string</span>&gt;&gt;(<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>());</span></span></code></pre></div><p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>toggleCategory(category)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 展开/折叠类别</li>
+<li><strong>实现：</strong> 使用Set管理展开状态</li>
+<li><strong>为什么使用Set：</strong> 高效的查找和添加/删除操作</li>
+</ul>
+</li>
+<li>
+<p><strong><code>toggleImageDetails(imagePath)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 展开/折叠图像详情</li>
+<li><strong>实现：</strong> 类似toggleCategory</li>
+<li><strong>为什么需要：</strong> 避免一次显示过多信息，保持界面整洁</li>
+</ul>
+</li>
+<li>
+<p><strong><code>renderConfidenceBadge(confidence)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 渲染置信度徽章</li>
+<li><strong>样式规则：</strong>
+<ul>
+<li>confidence &gt;= 60: 绿色（正常）</li>
+<li>confidence &lt; 60: 黄色（警告）</li>
+</ul>
+</li>
+<li><strong>为什么这么设计：</strong> 视觉化置信度，快速识别低置信度结果</li>
+</ul>
+</li>
+<li>
+<p><strong><code>renderImageCard(image, categoryName)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 渲染单个图像卡片</li>
+<li><strong>内容：</strong>
+<ul>
+<li>图像预览</li>
+<li>图像类型</li>
+<li>置信度徽章</li>
+<li>异常标记（如果有）</li>
+<li>展开按钮</li>
+</ul>
+</li>
+<li><strong>展开后显示：</strong>
+<ul>
+<li>关键特征</li>
+<li>分析推理</li>
+</ul>
+</li>
+<li><strong>为什么使用卡片：</strong> 清晰的视觉分隔，易于浏览</li>
+</ul>
+</li>
+</ol>
+<p><strong>UI布局：</strong></p>
+<ul>
+<li>类别卡片（可折叠）
+<ul>
+<li>类别标题 + 图像数量徽章</li>
+<li>解释说明区域
+<ul>
+<li>共同特征（列表）</li>
+<li>分类原因</li>
+<li>相似性分析</li>
+<li>差异性分析</li>
+<li>总结</li>
+</ul>
+</li>
+<li>图像网格（响应式布局）</li>
+</ul>
+</li>
+</ul>
+<p><strong>为什么使用memo：</strong> 结果数据通常不变，避免重复渲染</p>
+<hr>
+<h4 class="heading-element" id="223-统计图表组件-statisticscharttsx"><span>2.2.3 统计图表组件 (<code>StatisticsChart.tsx</code>)</span>
+  <a href="#223-%e7%bb%9f%e8%ae%a1%e5%9b%be%e8%a1%a8%e7%bb%84%e4%bb%b6-statisticscharttsx" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>功能：</strong> 可视化类别分布统计。</p>
+<p><strong>核心依赖：</strong></p>
+<ul>
+<li>Chart.js: 图表库</li>
+<li>react-chartjs-2: React封装</li>
+</ul>
+<p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>useMemo(() =&gt; chartData, [...])</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 计算图表数据</li>
+<li><strong>实现：</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">chartData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useMemo</span>(() <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">categories</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">statistics</span>.<span style="color:#a6e22e">category_distribution</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">counts</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">categories</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">cat</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">statistics</span>.<span style="color:#a6e22e">category_distribution</span>[<span style="color:#a6e22e">cat</span>]);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">colors</span> <span style="color:#f92672">=</span> [...]; <span style="color:#75715e">// Fluent UI颜色
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">labels</span>: <span style="color:#66d9ef">categories</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">datasets</span><span style="color:#f92672">:</span> [{
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">label</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;图像数量&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">data</span>: <span style="color:#66d9ef">counts</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">backgroundColor</span>: <span style="color:#66d9ef">colors</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">borderColor</span>: <span style="color:#66d9ef">colors</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">borderWidth</span>: <span style="color:#66d9ef">2</span>,
+</span></span><span style="display:flex;"><span>    }],
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>}, [<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">statistics</span>.<span style="color:#a6e22e">category_distribution</span>]);</span></span></code></pre></div></li>
+<li><strong>为什么使用useMemo：</strong> 避免每次渲染都重新计算，提升性能</li>
+</ul>
+</li>
+<li>
+<p><strong>图表配置</strong></p>
+<ul>
+<li><strong>饼图配置 (pieOptions):</strong>
+<ul>
+<li>响应式布局</li>
+<li>图例位置：底部</li>
+<li>工具提示：显示数量和百分比</li>
+</ul>
+</li>
+<li><strong>柱状图配置 (barOptions):</strong>
+<ul>
+<li>Y轴从0开始</li>
+<li>步长为1</li>
+<li>隐藏X轴网格线</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>统计卡片</strong></p>
+<ul>
+<li>总图像数</li>
+<li>类别数量</li>
+<li>最多类别及数量</li>
+</ul>
+</li>
+</ol>
+<p><strong>为什么提供两种图表：</strong></p>
+<ul>
+<li>饼图：直观显示比例</li>
+<li>柱状图：便于比较数量</li>
+</ul>
+<p><strong>颜色选择：</strong> 使用Fluent UI颜色令牌，保持设计一致性</p>
+<hr>
+<h4 class="heading-element" id="224-导出按钮组件-exportbuttontsx"><span>2.2.4 导出按钮组件 (<code>ExportButton.tsx</code>)</span>
+  <a href="#224-%e5%af%bc%e5%87%ba%e6%8c%89%e9%92%ae%e7%bb%84%e4%bb%b6-exportbuttontsx" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>功能：</strong> 导出分析结果为JSON文件。</p>
+<p><strong>核心状态：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">exportStatus</span>, <span style="color:#a6e22e">setExportStatus</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span><span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#39;idle&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;success&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;error&#39;</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;idle&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">errorMessage</span>, <span style="color:#a6e22e">setErrorMessage</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">string</span>&gt;(<span style="color:#e6db74">&#39;&#39;</span>);</span></span></code></pre></div><p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>handleExport()</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 生成并下载JSON文件</li>
+<li><strong>实现流程：</strong>
+<ol>
+<li>将结果转换为JSON字符串（格式化，缩进2空格）</li>
+<li>创建Blob对象（类型：application/json）</li>
+<li>创建下载URL（URL.createObjectURL）</li>
+<li>创建临时<!-- raw HTML omitted -->标签</li>
+<li>设置download属性（文件名包含时间戳）</li>
+<li>触发点击下载</li>
+<li>清理DOM和URL</li>
+</ol>
+</li>
+<li><strong>文件名格式：</strong> <code>analysis-results-2024-12-03T10-30-45.json</code></li>
+<li><strong>为什么使用Blob：</strong> 在浏览器中生成文件，无需服务器参与</li>
+</ul>
+</li>
+<li>
+<p><strong>状态管理</strong></p>
+<ul>
+<li>导出成功：显示成功消息3秒</li>
+<li>导出失败：显示错误消息5秒</li>
+<li><strong>为什么自动隐藏：</strong> 避免界面混乱</li>
+</ul>
+</li>
+</ol>
+<p><strong>UI特性：</strong></p>
+<ul>
+<li>成功状态：显示对勾图标，按钮禁用</li>
+<li>错误状态：显示错误消息</li>
+<li>正常状态：显示下载图标</li>
+</ul>
+<p><strong>为什么使用memo：</strong> 结果数据不变，避免重复渲染</p>
+<hr>
+<h4 class="heading-element" id="225-主分析页面-analysispagetsx"><span>2.2.5 主分析页面 (<code>AnalysisPage.tsx</code>)</span>
+  <a href="#225-%e4%b8%bb%e5%88%86%e6%9e%90%e9%a1%b5%e9%9d%a2-analysispagetsx" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p><strong>功能：</strong> 整合所有组件，提供完整的分析流程。</p>
+<p><strong>核心状态：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">files</span>, <span style="color:#a6e22e">setFiles</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">File</span><span style="color:#960050;background-color:#1e0010">[]</span>&gt;([]);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">selectedCategories</span>, <span style="color:#a6e22e">setSelectedCategories</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">string</span><span style="color:#960050;background-color:#1e0010">[]</span>&gt;([]);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">customCategory</span>, <span style="color:#a6e22e">setCustomCategory</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#e6db74">&#39;&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">loading</span>, <span style="color:#a6e22e">setLoading</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">setResult</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">AnalysisResult</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">null</span>&gt;(<span style="color:#66d9ef">null</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">setError</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">string</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">null</span>&gt;(<span style="color:#66d9ef">null</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">successMessage</span>, <span style="color:#a6e22e">setSuccessMessage</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">string</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">null</span>&gt;(<span style="color:#66d9ef">null</span>);</span></span></code></pre></div><p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>handleCategoryChange(category, checked)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 处理类别复选框变化</li>
+<li><strong>实现：</strong> 添加或移除类别</li>
+</ul>
+</li>
+<li>
+<p><strong><code>handleAddCustomCategory()</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 添加自定义类别</li>
+<li><strong>验证：</strong> 去除空格，检查重复</li>
+<li><strong>为什么需要：</strong> 支持用户自定义分类</li>
+</ul>
+</li>
+<li>
+<p><strong><code>handleAnalyze()</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 执行分析</li>
+<li><strong>流程：</strong>
+<ol>
+<li>验证至少有一个文件</li>
+<li>设置loading状态</li>
+<li>调用<code>analyzeImages()</code> API</li>
+<li>根据结果类型设置成功消息</li>
+<li>错误处理</li>
+</ol>
+</li>
+<li><strong>为什么使用async/await：</strong> API调用是异步操作</li>
+</ul>
+</li>
+<li>
+<p><strong><code>renderSingleResult(singleResult)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 渲染单张图像结果</li>
+<li><strong>布局：</strong>
+<ul>
+<li>左侧：图像预览（300px）</li>
+<li>右侧：分析详情</li>
+</ul>
+</li>
+<li><strong>内容：</strong>
+<ul>
+<li>图像类型</li>
+<li>诊断类别</li>
+<li>置信度徽章</li>
+<li>异常标记</li>
+<li>关键特征</li>
+<li>分析推理</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>renderMultipleResults(multipleResult)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 渲染多张图像结果</li>
+<li><strong>组件：</strong>
+<ul>
+<li>MultipleResultsView</li>
+<li>StatisticsChart</li>
+<li>ExportButton</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>页面布局：</strong></p>
+<ol>
+<li>标题和描述</li>
+<li>错误/成功消息</li>
+<li>文件上传区域</li>
+<li>类别选择区域
+<ul>
+<li>预定义类别（复选框）</li>
+<li>自定义类别（输入框）</li>
+</ul>
+</li>
+<li>分析按钮</li>
+<li>加载状态</li>
+<li>结果展示</li>
+</ol>
+<p><strong>为什么这样设计：</strong></p>
+<ul>
+<li>步骤清晰：1.上传 → 2.选择类别 → 3.分析</li>
+<li>即时反馈：错误/成功消息</li>
+<li>响应式布局：适配不同屏幕</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="23-api服务层-apits"><span>2.3 API服务层 (<code>api.ts</code>)</span>
+  <a href="#23-api%e6%9c%8d%e5%8a%a1%e5%b1%82-apits" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>功能：</strong> 封装与Django后端的HTTP通信。</p>
+<p><strong>Axios配置：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">api</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">create</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">baseURL</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/api&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Content-Type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;multipart/form-data&#39;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p><strong>核心函数：</strong></p>
+<ol>
+<li>
+<p><strong><code>formatApiError(error)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 格式化API错误</li>
+<li><strong>处理情况：</strong>
+<ul>
+<li>服务器响应错误：提取错误消息</li>
+<li>网络错误：显示连接失败</li>
+<li>未知错误：显示通用错误</li>
+</ul>
+</li>
+<li><strong>返回格式：</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">success</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;ERROR_CODE&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;用户友好的错误消息&#39;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+<li><strong>为什么需要：</strong> 统一错误格式，提供友好的错误提示</li>
+</ul>
+</li>
+<li>
+<p><strong><code>analyzeImages(files, categories)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 调用分析API</li>
+<li><strong>实现：</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">formData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FormData</span>();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">files</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">file</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#39;images&#39;</span>, <span style="color:#a6e22e">file</span>));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">categories</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#39;categories&#39;</span>, <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">categories</span>));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">api</span>.<span style="color:#a6e22e">post</span>&lt;<span style="color:#f92672">AnalysisResult</span>&gt;(<span style="color:#e6db74">&#39;/analyze/&#39;</span>, <span style="color:#a6e22e">formData</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">data</span>;</span></span></code></pre></div></li>
+<li><strong>为什么使用FormData：</strong> 支持文件上传</li>
+<li><strong>为什么JSON.stringify categories：</strong> 后端需要JSON字符串</li>
+</ul>
+</li>
+<li>
+<p><strong><code>getCategories()</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 获取预定义类别</li>
+<li><strong>实现：</strong> GET请求到<code>/api/categories/</code></li>
+<li><strong>返回值：</strong> string[]</li>
+</ul>
+</li>
+<li>
+<p><strong><code>exportResults(results)</code></strong></p>
+<ul>
+<li><strong>功能：</strong> 导出结果（备用方案）</li>
+<li><strong>注意：</strong> 当前前端直接生成JSON，此函数备用</li>
+</ul>
+</li>
+</ol>
+<p><strong>错误处理策略：</strong></p>
+<ul>
+<li>捕获所有异常</li>
+<li>格式化为统一的ApiError</li>
+<li>抛出给调用者处理</li>
+</ul>
+<p><strong>为什么使用axios：</strong></p>
+<ul>
+<li>自动JSON转换</li>
+<li>拦截器支持</li>
+<li>请求/响应转换</li>
+<li>超时控制</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="24-typescript类型定义-typesindexts"><span>2.4 TypeScript类型定义 (<code>types/index.ts</code>)</span>
+  <a href="#24-typescript%e7%b1%bb%e5%9e%8b%e5%ae%9a%e4%b9%89-typesindexts" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>核心类型：</strong></p>
+<ol>
+<li>
+<p><strong><code>ClassificationResult</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ClassificationResult</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image_path</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image_type</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">category</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">confidence</span>: <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">features</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">reasoning</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">abnormal?</span>: <span style="color:#66d9ef">boolean</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+<li>
+<p><strong><code>SingleAnalysisResult</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">SingleAnalysisResult</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">success</span>: <span style="color:#66d9ef">boolean</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;single&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">result</span>: <span style="color:#66d9ef">ClassificationResult</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">full_response?</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+<li>
+<p><strong><code>MultipleAnalysisResult</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">MultipleAnalysisResult</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">success</span>: <span style="color:#66d9ef">boolean</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;multiple&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">total_images</span>: <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">grouped_by_category</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        [<span style="color:#a6e22e">category</span>: <span style="color:#66d9ef">string</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">ClassificationResult</span>[];
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">explanations</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        [<span style="color:#a6e22e">category</span>: <span style="color:#66d9ef">string</span>]<span style="color:#f92672">:</span> <span style="color:#a6e22e">CategoryExplanation</span>;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">statistics</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">total_categories</span>: <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">category_distribution</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            [<span style="color:#a6e22e">category</span>: <span style="color:#66d9ef">string</span>]<span style="color:#f92672">:</span> <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+<li>
+<p><strong><code>AnalysisResult</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">AnalysisResult</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">SingleAnalysisResult</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">MultipleAnalysisResult</span>;</span></span></code></pre></div></li>
+</ol>
+<p><strong>为什么使用联合类型：</strong></p>
+<ul>
+<li>类型安全：编译时检查</li>
+<li>智能提示：IDE自动补全</li>
+<li>类型守卫：运行时类型判断</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="25-样式设计"><span>2.5 样式设计</span>
+  <a href="#25-%e6%a0%b7%e5%bc%8f%e8%ae%be%e8%ae%a1" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>设计系统：</strong> Fluent UI v9</p>
+<p><strong>核心特性：</strong></p>
+<ol>
+<li>
+<p><strong>makeStyles API</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">useStyles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">makeStyles</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">container</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">minHeight</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;100vh&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">backgroundColor</span>: <span style="color:#66d9ef">tokens.colorNeutralBackground3</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><ul>
+<li><strong>优势：</strong> 类型安全、性能优化、主题支持</li>
+</ul>
+</li>
+<li>
+<p><strong>设计令牌 (Design Tokens)</strong></p>
+<ul>
+<li>颜色：<code>tokens.colorBrandForeground1</code></li>
+<li>字体：<code>tokens.fontSizeBase400</code></li>
+<li>间距：<code>tokens.spacingHorizontalM</code></li>
+<li>圆角：<code>tokens.borderRadiusMedium</code></li>
+<li><strong>为什么使用令牌：</strong> 保持设计一致性，支持主题切换</li>
+</ul>
+</li>
+<li>
+<p><strong>响应式设计</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#e6db74">&#39;@media (max-width: 768px)&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">gridTemplateColumns</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;1fr&#39;</span>,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><ul>
+<li>断点：768px（平板）</li>
+<li>布局调整：网格变单列</li>
+</ul>
+</li>
+<li>
+<p><strong>动画效果</strong></p>
+<ul>
+<li>fade-in：淡入</li>
+<li>slide-in：滑入</li>
+<li>scale-in：缩放</li>
+<li><strong>实现：</strong> CSS动画 + 类名</li>
+</ul>
+</li>
+</ol>
+<p><strong>颜色语义：</strong></p>
+<ul>
+<li>绿色：正常/成功</li>
+<li>黄色：警告/低置信度</li>
+<li>红色：异常/错误</li>
+<li>蓝色：品牌色/主要操作</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="26-前端调用关系图"><span>2.6 前端调用关系图</span>
+  <a href="#26-%e5%89%8d%e7%ab%af%e8%b0%83%e7%94%a8%e5%85%b3%e7%b3%bb%e5%9b%be" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><pre tabindex="0"><code>用户操作
+    ↓
+AnalysisPage (主页面)
+    ↓
+FileUpload (文件上传)
+    ↓
+api.analyzeImages() (API调用)
+    ↓
+Django后端
+    ↓
+返回结果
+    ↓
+AnalysisPage (状态更新)
+    ↓
+MultipleResultsView / StatisticsChart (结果展示)
+    ↓
+ExportButton (导出功能)</code></pre><p><strong>数据流：</strong></p>
+<ol>
+<li>用户选择文件 → FileUpload组件</li>
+<li>FileUpload通知父组件 → AnalysisPage更新files状态</li>
+<li>用户点击分析 → handleAnalyze()</li>
+<li>调用API → api.analyzeImages()</li>
+<li>接收结果 → 更新result状态</li>
+<li>渲染结果 → MultipleResultsView/StatisticsChart</li>
+<li>用户导出 → ExportButton生成JSON</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="三系统集成与部署"><span>三、系统集成与部署</span>
+  <a href="#%e4%b8%89%e7%b3%bb%e7%bb%9f%e9%9b%86%e6%88%90%e4%b8%8e%e9%83%a8%e7%bd%b2" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="31-开发环境启动"><span>3.1 开发环境启动</span>
+  <a href="#31-%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e5%90%af%e5%8a%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>后端启动：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 方式1：使用批处理脚本</span>
+</span></span><span style="display:flex;"><span>run.bat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 方式2：手动启动</span>
+</span></span><span style="display:flex;"><span>python -m medical_imaging.django_app.manage runserver 0.0.0.0:8000</span></span></code></pre></div><p><strong>前端启动：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd frontend
+</span></span><span style="display:flex;"><span>npm install
+</span></span><span style="display:flex;"><span>npm run dev
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 访问 http://localhost:3000</span></span></span></code></pre></div><p><strong>为什么分开启动：</strong></p>
+<ul>
+<li>前后端独立开发</li>
+<li>支持热重载</li>
+<li>便于调试</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="32-api代理配置"><span>3.2 API代理配置</span>
+  <a href="#32-api%e4%bb%a3%e7%90%86%e9%85%8d%e7%bd%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>Vite配置 (<code>vite.config.ts</code>)：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">defineConfig</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">server</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">port</span>: <span style="color:#66d9ef">3000</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">proxy</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;/api&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">target</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http://localhost:8000&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">changeOrigin</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;/temp&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">target</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http://localhost:8000&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">changeOrigin</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p><strong>作用：</strong></p>
+<ul>
+<li>前端请求<code>/api/*</code>自动转发到后端</li>
+<li>解决跨域问题</li>
+<li>简化前端配置</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="33-生产环境部署"><span>3.3 生产环境部署</span>
+  <a href="#33-%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83%e9%83%a8%e7%bd%b2" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>后端部署：</strong></p>
+<ol>
+<li>
+<p>修改<code>settings.py</code>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DEBUG <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>ALLOWED_HOSTS <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;your-domain.com&#39;</span>]
+</span></span><span style="display:flex;"><span>SECRET_KEY <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;SECRET_KEY&#39;</span>)</span></span></code></pre></div></li>
+<li>
+<p>收集静态文件：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m medical_imaging.django_app.manage collectstatic</span></span></code></pre></div></li>
+<li>
+<p>使用WSGI服务器（如Gunicorn）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gunicorn medical_imaging.django_app.config.wsgi:application</span></span></code></pre></div></li>
+</ol>
+<p><strong>前端部署：</strong></p>
+<ol>
+<li>
+<p>构建生产版本：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd frontend
+</span></span><span style="display:flex;"><span>npm run build</span></span></code></pre></div></li>
+<li>
+<p>部署dist目录到Web服务器（Nginx/Apache）</p>
+</li>
+<li>
+<p>配置反向代理：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#66d9ef">location</span> <span style="color:#e6db74">/api/</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://backend:8000/api/</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+</ol>
+<p><strong>为什么这样部署：</strong></p>
+<ul>
+<li>前端静态文件由Nginx提供，性能高</li>
+<li>后端API由Gunicorn处理，支持并发</li>
+<li>反向代理统一入口，简化配置</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="34-环境变量配置"><span>3.4 环境变量配置</span>
+  <a href="#34-%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e9%85%8d%e7%bd%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>后端环境变量：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>VLM_API_KEY<span style="color:#f92672">=</span>your-api-key
+</span></span><span style="display:flex;"><span>VLM_BASE_URL<span style="color:#f92672">=</span>https://dashscope.aliyuncs.com/compatible-mode/v1
+</span></span><span style="display:flex;"><span>VLM_MODEL_NAME<span style="color:#f92672">=</span>qwen3-vl-plus
+</span></span><span style="display:flex;"><span>SECRET_KEY<span style="color:#f92672">=</span>your-secret-key</span></span></code></pre></div><p><strong>为什么使用环境变量：</strong></p>
+<ul>
+<li>安全：敏感信息不提交到代码库</li>
+<li>灵活：不同环境使用不同配置</li>
+<li>标准：遵循12-factor应用原则</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="四核心功能实现原理"><span>四、核心功能实现原理</span>
+  <a href="#%e5%9b%9b%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="41-图像分类原理"><span>4.1 图像分类原理</span>
+  <a href="#41-%e5%9b%be%e5%83%8f%e5%88%86%e7%b1%bb%e5%8e%9f%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>流程：</strong></p>
+<ol>
+<li>
+<p><strong>图像预处理</strong></p>
+<ul>
+<li>读取图像文件</li>
+<li>编码为Base64字符串</li>
+<li>嵌入到API请求中</li>
+</ul>
+</li>
+<li>
+<p><strong>提示词工程</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&#34;&#34;请对这张医疗影像进行专业分类。可能的类别包括：</span><span style="color:#e6db74">{</span>categories_str<span style="color:#e6db74">}</span><span style="color:#e6db74">。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">请分析图像并回答以下问题：
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">1. 图像类型（X光片、CT扫描、MRI等）
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">2. 主要诊断类别
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">3. 置信度评估（0-100%）
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">4. 关键特征描述
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">请以JSON格式返回结果...
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span></span></span></code></pre></div><ul>
+<li><strong>关键点：</strong> 明确要求JSON格式，指定字段</li>
+<li><strong>为什么有效：</strong> VLM理解结构化输出要求</li>
+</ul>
+</li>
+<li>
+<p><strong>VLM推理</strong></p>
+<ul>
+<li>模型分析图像内容</li>
+<li>识别医学特征</li>
+<li>匹配诊断类别</li>
+<li>生成置信度</li>
+</ul>
+</li>
+<li>
+<p><strong>结果解析</strong></p>
+<ul>
+<li>提取JSON对象</li>
+<li>验证字段完整性</li>
+<li>返回结构化结果</li>
+</ul>
+</li>
+</ol>
+<p><strong>为什么使用VLM而不是传统CNN：</strong></p>
+<ul>
+<li>VLM理解语义，可以解释推理过程</li>
+<li>支持开放式分类，不限于预定义类别</li>
+<li>可以处理多模态信息（图像+文本）</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="42-批量分析与分组原理"><span>4.2 批量分析与分组原理</span>
+  <a href="#42-%e6%89%b9%e9%87%8f%e5%88%86%e6%9e%90%e4%b8%8e%e5%88%86%e7%bb%84%e5%8e%9f%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>流程：</strong></p>
+<ol>
+<li>
+<p><strong>并行分类</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>classification_results <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    self<span style="color:#f92672">.</span>classify_image(image_path, categories) 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> image_path <span style="color:#f92672">in</span> image_paths
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div><ul>
+<li><strong>注意：</strong> 当前是串行，可优化为并行</li>
+</ul>
+</li>
+<li>
+<p><strong>结果分组</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>grouped_images <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> result <span style="color:#f92672">in</span> classification_results:
+</span></span><span style="display:flex;"><span>    category <span style="color:#f92672">=</span> result[<span style="color:#e6db74">&#34;result&#34;</span>][<span style="color:#e6db74">&#34;category&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> category <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> grouped_images:
+</span></span><span style="display:flex;"><span>        grouped_images[category] <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    grouped_images[category]<span style="color:#f92672">.</span>append(result)</span></span></code></pre></div><ul>
+<li><strong>数据结构：</strong> 字典，键为类别，值为结果列表</li>
+</ul>
+</li>
+<li>
+<p><strong>生成解释</strong></p>
+<ul>
+<li>提取每个类别的所有图像特征</li>
+<li>构建包含所有信息的提示词</li>
+<li>调用VLM生成解释</li>
+<li>解释内容：
+<ul>
+<li>共同特征</li>
+<li>分类原因</li>
+<li>相似性</li>
+<li>差异性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>为什么需要解释：</strong></p>
+<ul>
+<li>帮助医生理解AI决策</li>
+<li>提高可信度</li>
+<li>发现分类规律</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="43-目标检测原理"><span>4.3 目标检测原理</span>
+  <a href="#43-%e7%9b%ae%e6%a0%87%e6%a3%80%e6%b5%8b%e5%8e%9f%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>流程：</strong></p>
+<ol>
+<li>
+<p><strong>上下文增强</strong></p>
+<ul>
+<li>如果有分类结果，提取诊断类别和特征</li>
+<li>构建上下文提示：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>classification_context <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">重要提示：该图像已被分类为&#34;</span><span style="color:#e6db74">{</span>category<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;类别（置信度: </span><span style="color:#e6db74">{</span>confidence<span style="color:#e6db74">}</span><span style="color:#e6db74">%）。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">请特别注意检测与该分类相关的异常区域...
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span></span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>边界框检测</strong></p>
+<ul>
+<li>提示词要求返回归一化坐标</li>
+<li>VLM识别异常区域</li>
+<li>生成边界框[x_min, y_min, x_max, y_max]</li>
+</ul>
+</li>
+<li>
+<p><strong>一致性检查</strong></p>
+<ul>
+<li>比较检测结果与分类结果</li>
+<li>如果不一致，提示重新检查</li>
+</ul>
+</li>
+</ol>
+<p><strong>为什么使用归一化坐标：</strong></p>
+<ul>
+<li>与图像尺寸无关</li>
+<li>便于前端渲染</li>
+<li>标准化格式</li>
+</ul>
+<p><strong>局限性：</strong></p>
+<ul>
+<li>VLM的目标检测精度不如专用模型（如YOLO）</li>
+<li>适合辅助诊断，不能替代专业检测</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="44-临时文件管理原理"><span>4.4 临时文件管理原理</span>
+  <a href="#44-%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86%e5%8e%9f%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>生命周期：</strong></p>
+<ol>
+<li>
+<p><strong>上传阶段</strong></p>
+<ul>
+<li>生成UUID文件名</li>
+<li>保存到temp目录</li>
+<li>返回路径给分析器</li>
+</ul>
+</li>
+<li>
+<p><strong>使用阶段</strong></p>
+<ul>
+<li>分析器读取文件</li>
+<li>前端显示图像</li>
+</ul>
+</li>
+<li>
+<p><strong>清理阶段</strong></p>
+<ul>
+<li>定时任务检查文件年龄</li>
+<li>删除超过1小时的文件</li>
+</ul>
+</li>
+</ol>
+<p><strong>为什么不立即删除：</strong></p>
+<ul>
+<li>前端需要显示图像</li>
+<li>用户可能需要重新查看结果</li>
+</ul>
+<p><strong>为什么使用UUID：</strong></p>
+<ul>
+<li>避免文件名冲突</li>
+<li>安全：不暴露原始文件名</li>
+<li>唯一性保证</li>
+</ul>
+<p><strong>清理策略：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cleanup_old_files</span>(self, max_age_seconds<span style="color:#f92672">=</span><span style="color:#ae81ff">3600</span>):
+</span></span><span style="display:flex;"><span>    current_time <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> file_path <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>temp_dir<span style="color:#f92672">.</span>iterdir():
+</span></span><span style="display:flex;"><span>        file_age <span style="color:#f92672">=</span> current_time <span style="color:#f92672">-</span> file_path<span style="color:#f92672">.</span>stat()<span style="color:#f92672">.</span>st_mtime
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> file_age <span style="color:#f92672">&gt;</span> max_age_seconds:
+</span></span><span style="display:flex;"><span>            file_path<span style="color:#f92672">.</span>unlink()</span></span></code></pre></div><hr>
+<h2 class="heading-element" id="五性能优化策略"><span>五、性能优化策略</span>
+  <a href="#%e4%ba%94%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96%e7%ad%96%e7%95%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="51-后端优化"><span>5.1 后端优化</span>
+  <a href="#51-%e5%90%8e%e7%ab%af%e4%bc%98%e5%8c%96" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>HTTP会话复用</strong></p>
+<ul>
+<li>使用<code>requests.Session()</code></li>
+<li>避免重复建立TCP连接</li>
+<li>提升API调用速度</li>
+</ul>
+</li>
+<li>
+<p><strong>异步处理（未实现，可优化）</strong></p>
+<ul>
+<li>使用<code>asyncio</code>并行分类多张图像</li>
+<li>减少总处理时间</li>
+</ul>
+</li>
+<li>
+<p><strong>缓存机制（未实现，可优化）</strong></p>
+<ul>
+<li>缓存相同图像的分析结果</li>
+<li>使用Redis存储</li>
+</ul>
+</li>
+<li>
+<p><strong>图像压缩</strong></p>
+<ul>
+<li>前端限制上传大小</li>
+<li>可选：服务器端压缩</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="52-前端优化"><span>5.2 前端优化</span>
+  <a href="#52-%e5%89%8d%e7%ab%af%e4%bc%98%e5%8c%96" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>组件懒加载</strong></p>
+<ul>
+<li>使用React.lazy()</li>
+<li>减少初始加载时间</li>
+</ul>
+</li>
+<li>
+<p><strong>虚拟滚动（未实现，可优化）</strong></p>
+<ul>
+<li>大量图像时使用虚拟列表</li>
+<li>只渲染可见区域</li>
+</ul>
+</li>
+<li>
+<p><strong>图像懒加载</strong></p>
+<ul>
+<li>使用<code>loading=&quot;lazy&quot;</code>属性</li>
+<li>延迟加载非可见图像</li>
+</ul>
+</li>
+<li>
+<p><strong>Memo优化</strong></p>
+<ul>
+<li>使用<code>React.memo()</code></li>
+<li>避免不必要的重新渲染</li>
+</ul>
+</li>
+<li>
+<p><strong>useMemo/useCallback</strong></p>
+<ul>
+<li>缓存计算结果</li>
+<li>缓存回调函数</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="53-网络优化"><span>5.3 网络优化</span>
+  <a href="#53-%e7%bd%91%e7%bb%9c%e4%bc%98%e5%8c%96" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>API代理</strong></p>
+<ul>
+<li>开发环境使用Vite代理</li>
+<li>避免跨域预检请求</li>
+</ul>
+</li>
+<li>
+<p><strong>压缩传输</strong></p>
+<ul>
+<li>启用gzip压缩</li>
+<li>减少传输数据量</li>
+</ul>
+</li>
+<li>
+<p><strong>CDN加速（生产环境）</strong></p>
+<ul>
+<li>静态资源使用CDN</li>
+<li>加速全球访问</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="六错误处理机制"><span>六、错误处理机制</span>
+  <a href="#%e5%85%ad%e9%94%99%e8%af%af%e5%a4%84%e7%90%86%e6%9c%ba%e5%88%b6" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="61-后端错误处理"><span>6.1 后端错误处理</span>
+  <a href="#61-%e5%90%8e%e7%ab%af%e9%94%99%e8%af%af%e5%a4%84%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>分层错误处理：</strong></p>
+<ol>
+<li>
+<p><strong>核心层 (analyzer.py)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    result_text <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>client<span style="color:#f92672">.</span>call(messages)
+</span></span><span style="display:flex;"><span>    result_json <span style="color:#f92672">=</span> extract_json_from_text(result_text)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;success&#34;</span>: <span style="color:#66d9ef">True</span>, <span style="color:#e6db74">&#34;result&#34;</span>: result_json}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;success&#34;</span>: <span style="color:#66d9ef">False</span>, <span style="color:#e6db74">&#34;error&#34;</span>: str(e)}</span></span></code></pre></div><ul>
+<li>捕获所有异常</li>
+<li>返回统一格式</li>
+</ul>
+</li>
+<li>
+<p><strong>服务层 (services.py)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>analyzer<span style="color:#f92672">.</span>classify_image(image_path, categories)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> result<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;success&#34;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;success&#34;</span>: <span style="color:#66d9ef">False</span>, <span style="color:#e6db74">&#34;error&#34;</span>: <span style="color:#e6db74">&#34;ANALYSIS_ERROR&#34;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">FileNotFoundError</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;success&#34;</span>: <span style="color:#66d9ef">False</span>, <span style="color:#e6db74">&#34;error&#34;</span>: <span style="color:#e6db74">&#34;FILE_NOT_FOUND&#34;</span>}</span></span></code></pre></div><ul>
+<li>细化错误类型</li>
+<li>添加错误码</li>
+</ul>
+</li>
+<li>
+<p><strong>视图层 (views.py)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> analysis_service<span style="color:#f92672">.</span>analyze_single_image(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> JsonResponse(result)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error: </span><span style="color:#e6db74">{</span>str(e)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, exc_info<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> JsonResponse({<span style="color:#e6db74">&#34;error&#34;</span>: <span style="color:#e6db74">&#34;INTERNAL_ERROR&#34;</span>}, status<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>)</span></span></code></pre></div><ul>
+<li>记录日志</li>
+<li>返回HTTP状态码</li>
+</ul>
+</li>
+</ol>
+<p><strong>错误码设计：</strong></p>
+<ul>
+<li><code>NO_FILES</code>: 未上传文件</li>
+<li><code>INVALID_FILE_FORMAT</code>: 文件格式不支持</li>
+<li><code>INVALID_CATEGORIES</code>: 类别格式无效</li>
+<li><code>FILE_NOT_FOUND</code>: 文件不存在</li>
+<li><code>ANALYSIS_ERROR</code>: 分析失败</li>
+<li><code>INTERNAL_ERROR</code>: 服务器内部错误</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="62-前端错误处理"><span>6.2 前端错误处理</span>
+  <a href="#62-%e5%89%8d%e7%ab%af%e9%94%99%e8%af%af%e5%a4%84%e7%90%86" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>错误边界 (ErrorBoundary.tsx)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ErrorBoundary</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">componentDidCatch</span>(<span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">errorInfo</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error caught by boundary:&#39;</span>, <span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">errorInfo</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">render() {</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">hasError</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">ErrorFallback</span> /&gt;;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">children</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><ul>
+<li>捕获组件树中的错误</li>
+<li>显示友好的错误页面</li>
+<li>防止整个应用崩溃</li>
+</ul>
+<p><strong>API错误处理</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">analyzeImages</span>(<span style="color:#a6e22e">files</span>, <span style="color:#a6e22e">categories</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">setResult</span>(<span style="color:#a6e22e">result</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">err</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">apiError</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">ApiError</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">setError</span>(<span style="color:#a6e22e">apiError</span>.<span style="color:#a6e22e">message</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;分析失败，请稍后重试&#39;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><ul>
+<li>捕获API异常</li>
+<li>显示用户友好的错误消息</li>
+<li>保持应用可用</li>
+</ul>
+<p><strong>表单验证</strong></p>
+<ul>
+<li>前端验证文件格式和大小</li>
+<li>减少无效请求</li>
+<li>即时反馈</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="七安全性考虑"><span>七、安全性考虑</span>
+  <a href="#%e4%b8%83%e5%ae%89%e5%85%a8%e6%80%a7%e8%80%83%e8%99%91" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="71-文件上传安全"><span>7.1 文件上传安全</span>
+  <a href="#71-%e6%96%87%e4%bb%b6%e4%b8%8a%e4%bc%a0%e5%ae%89%e5%85%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>文件类型验证</strong></p>
+<ul>
+<li>前端：检查MIME类型</li>
+<li>后端：验证文件扩展名</li>
+<li>双重验证防止绕过</li>
+</ul>
+</li>
+<li>
+<p><strong>文件大小限制</strong></p>
+<ul>
+<li>前端：50MB</li>
+<li>后端：Django配置50MB</li>
+<li>防止DoS攻击</li>
+</ul>
+</li>
+<li>
+<p><strong>文件名安全</strong></p>
+<ul>
+<li>使用UUID重命名</li>
+<li>避免路径遍历攻击</li>
+<li>不暴露原始文件名</li>
+</ul>
+</li>
+<li>
+<p><strong>临时文件隔离</strong></p>
+<ul>
+<li>存储在专用temp目录</li>
+<li>定期清理</li>
+<li>不可直接访问</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="72-api安全"><span>7.2 API安全</span>
+  <a href="#72-api%e5%ae%89%e5%85%a8" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>CORS配置</strong></p>
+<ul>
+<li>开发环境：允许所有来源</li>
+<li>生产环境：限制特定域名</li>
+</ul>
+</li>
+<li>
+<p><strong>CSRF保护</strong></p>
+<ul>
+<li>当前禁用（API-only应用）</li>
+<li>如需Web表单，启用CSRF</li>
+</ul>
+</li>
+<li>
+<p><strong>输入验证</strong></p>
+<ul>
+<li>验证categories参数格式</li>
+<li>防止注入攻击</li>
+</ul>
+</li>
+<li>
+<p><strong>错误信息</strong></p>
+<ul>
+<li>不暴露敏感信息</li>
+<li>记录详细日志供调试</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="73-数据隐私"><span>7.3 数据隐私</span>
+  <a href="#73-%e6%95%b0%e6%8d%ae%e9%9a%90%e7%a7%81" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>临时存储</strong></p>
+<ul>
+<li>文件仅临时存储</li>
+<li>1小时后自动删除</li>
+<li>不持久化患者数据</li>
+</ul>
+</li>
+<li>
+<p><strong>API密钥保护</strong></p>
+<ul>
+<li>使用环境变量</li>
+<li>不提交到代码库</li>
+<li>定期轮换</li>
+</ul>
+</li>
+<li>
+<p><strong>传输加密</strong></p>
+<ul>
+<li>生产环境使用HTTPS</li>
+<li>保护数据传输安全</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="八测试策略"><span>八、测试策略</span>
+  <a href="#%e5%85%ab%e6%b5%8b%e8%af%95%e7%ad%96%e7%95%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="81-后端测试"><span>8.1 后端测试</span>
+  <a href="#81-%e5%90%8e%e7%ab%af%e6%b5%8b%e8%af%95" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>测试文件：</strong></p>
+<ul>
+<li><code>tests/test_api_with_images.py</code>: API端到端测试</li>
+<li><code>tests/test_e2e.py</code>: 完整流程测试</li>
+<li><code>tests/test_image_path_fix.py</code>: 路径处理测试</li>
+</ul>
+<p><strong>测试覆盖：</strong></p>
+<ol>
+<li>
+<p>单元测试</p>
+<ul>
+<li>工具函数测试</li>
+<li>类型验证测试</li>
+</ul>
+</li>
+<li>
+<p>集成测试</p>
+<ul>
+<li>API调用测试</li>
+<li>文件上传测试</li>
+</ul>
+</li>
+<li>
+<p>端到端测试</p>
+<ul>
+<li>完整分析流程</li>
+<li>多图像分组</li>
+</ul>
+</li>
+</ol>
+<p><strong>运行测试：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pytest tests/</span></span></code></pre></div><hr>
+<h3 class="heading-element" id="82-前端测试未实现建议"><span>8.2 前端测试（未实现，建议）</span>
+  <a href="#82-%e5%89%8d%e7%ab%af%e6%b5%8b%e8%af%95%e6%9c%aa%e5%ae%9e%e7%8e%b0%e5%bb%ba%e8%ae%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>建议测试框架：</strong></p>
+<ul>
+<li>Jest: 单元测试</li>
+<li>React Testing Library: 组件测试</li>
+<li>Cypress: E2E测试</li>
+</ul>
+<p><strong>测试用例：</strong></p>
+<ol>
+<li>
+<p>组件测试</p>
+<ul>
+<li>FileUpload: 文件选择、拖放、验证</li>
+<li>MultipleResultsView: 展开/折叠、数据渲染</li>
+<li>StatisticsChart: 图表渲染、数据计算</li>
+</ul>
+</li>
+<li>
+<p>集成测试</p>
+<ul>
+<li>API调用</li>
+<li>状态管理</li>
+<li>错误处理</li>
+</ul>
+</li>
+<li>
+<p>E2E测试</p>
+<ul>
+<li>完整分析流程</li>
+<li>导出功能</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="九扩展性设计"><span>九、扩展性设计</span>
+  <a href="#%e4%b9%9d%e6%89%a9%e5%b1%95%e6%80%a7%e8%ae%be%e8%ae%a1" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="91-支持新的vlm模型"><span>9.1 支持新的VLM模型</span>
+  <a href="#91-%e6%94%af%e6%8c%81%e6%96%b0%e7%9a%84vlm%e6%a8%a1%e5%9e%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>步骤：</strong></p>
+<ol>
+<li>
+<p>修改环境变量：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>VLM_MODEL_NAME<span style="color:#f92672">=</span>new-model-name</span></span></code></pre></div></li>
+<li>
+<p>如果API格式不同，修改<code>VLMClient.call()</code></p>
+</li>
+<li>
+<p>调整提示词以适应新模型</p>
+</li>
+</ol>
+<p><strong>为什么容易扩展：</strong></p>
+<ul>
+<li>VLMClient封装了API细节</li>
+<li>提示词集中管理</li>
+<li>配置外部化</li>
+</ul>
+<hr>
+<h3 class="heading-element" id="92-添加新的分析功能"><span>9.2 添加新的分析功能</span>
+  <a href="#92-%e6%b7%bb%e5%8a%a0%e6%96%b0%e7%9a%84%e5%88%86%e6%9e%90%e5%8a%9f%e8%83%bd" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>示例：添加病灶分割</strong></p>
+<ol>
+<li>
+<p><strong>后端：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">segment_lesion</span>(self, image_path):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 构建分割提示词</span>
+</span></span><span style="display:flex;"><span>    prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;请对图像中的病灶进行分割...&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 调用VLM API</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>client<span style="color:#f92672">.</span>call(messages)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> result</span></span></code></pre></div></li>
+<li>
+<p><strong>前端：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#75715e">// 添加分割结果展示组件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">SegmentationView</span>({ <span style="color:#a6e22e">result</span> }) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 渲染分割掩码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div></li>
+<li>
+<p><strong>API：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@csrf_exempt</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">segment_image</span>(request):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 处理分割请求</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span></span></span></code></pre></div></li>
+</ol>
+<hr>
+<h3 class="heading-element" id="93-多语言支持"><span>9.3 多语言支持</span>
+  <a href="#93-%e5%a4%9a%e8%af%ad%e8%a8%80%e6%94%af%e6%8c%81" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>实现方案：</strong></p>
+<ol>
+<li>使用i18n库（如react-i18next）</li>
+<li>提取所有文本到语言文件</li>
+<li>根据用户偏好切换语言</li>
+</ol>
+<p><strong>示例：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#75715e">// zh-CN.json
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;upload.title&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;上传图像&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;analyze.button&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;开始分析&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// en-US.json
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;upload.title&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Upload Images&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;analyze.button&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Start Analysis&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><hr>
+<h3 class="heading-element" id="94-数据库集成可选"><span>9.4 数据库集成（可选）</span>
+  <a href="#94-%e6%95%b0%e6%8d%ae%e5%ba%93%e9%9b%86%e6%88%90%e5%8f%af%e9%80%89" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>场景：</strong> 需要保存分析历史</p>
+<p><strong>实现：</strong></p>
+<ol>
+<li>
+<p>启用Django数据库</p>
+</li>
+<li>
+<p>创建模型：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AnalysisRecord</span>(models<span style="color:#f92672">.</span>Model):
+</span></span><span style="display:flex;"><span>    created_at <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(auto_now_add<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    image_path <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">255</span>)
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>JSONField()</span></span></code></pre></div></li>
+<li>
+<p>保存分析结果：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>AnalysisRecord<span style="color:#f92672">.</span>objects<span style="color:#f92672">.</span>create(
+</span></span><span style="display:flex;"><span>    image_path<span style="color:#f92672">=</span>image_path,
+</span></span><span style="display:flex;"><span>    result<span style="color:#f92672">=</span>result
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div></li>
+<li>
+<p>查询历史记录</p>
+</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="十常见问题与解决方案"><span>十、常见问题与解决方案</span>
+  <a href="#%e5%8d%81%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98%e4%b8%8e%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="101-api调用失败"><span>10.1 API调用失败</span>
+  <a href="#101-api%e8%b0%83%e7%94%a8%e5%a4%b1%e8%b4%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>问题：</strong> VLM API返回错误</p>
+<p><strong>可能原因：</strong></p>
+<ol>
+<li>API密钥无效</li>
+<li>网络连接问题</li>
+<li>请求超时</li>
+<li>配额用尽</li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li>检查环境变量配置</li>
+<li>测试网络连接</li>
+<li>增加超时时间</li>
+<li>检查API配额</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="102-图像无法显示"><span>10.2 图像无法显示</span>
+  <a href="#102-%e5%9b%be%e5%83%8f%e6%97%a0%e6%b3%95%e6%98%be%e7%a4%ba" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>问题：</strong> 前端无法加载图像</p>
+<p><strong>可能原因：</strong></p>
+<ol>
+<li>路径转换错误</li>
+<li>CORS配置问题</li>
+<li>文件已被清理</li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li>检查<code>_get_relative_image_path()</code></li>
+<li>配置Django静态文件服务</li>
+<li>延长临时文件生命周期</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="103-内存占用过高"><span>10.3 内存占用过高</span>
+  <a href="#103-%e5%86%85%e5%ad%98%e5%8d%a0%e7%94%a8%e8%bf%87%e9%ab%98" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>问题：</strong> 处理大量图像时内存不足</p>
+<p><strong>可能原因：</strong></p>
+<ol>
+<li>图像未释放</li>
+<li>缓存过多</li>
+<li>并发请求过多</li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li>及时关闭文件句柄</li>
+<li>限制并发数量</li>
+<li>使用流式处理</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="104-分析速度慢"><span>10.4 分析速度慢</span>
+  <a href="#104-%e5%88%86%e6%9e%90%e9%80%9f%e5%ba%a6%e6%85%a2" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p><strong>问题：</strong> 分析多张图像耗时长</p>
+<p><strong>可能原因：</strong></p>
+<ol>
+<li>串行处理</li>
+<li>网络延迟</li>
+<li>VLM响应慢</li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li>实现并行处理</li>
+<li>使用更快的网络</li>
+<li>优化提示词长度</li>
+<li>考虑本地模型</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="十一总结"><span>十一、总结</span>
+  <a href="#%e5%8d%81%e4%b8%80%e6%80%bb%e7%bb%93" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="111-系统优势"><span>11.1 系统优势</span>
+  <a href="#111-%e7%b3%bb%e7%bb%9f%e4%bc%98%e5%8a%bf" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>智能化</strong></p>
+<ul>
+<li>基于先进的VLM模型</li>
+<li>支持开放式分类</li>
+<li>提供推理解释</li>
+</ul>
+</li>
+<li>
+<p><strong>易用性</strong></p>
+<ul>
+<li>友好的Web界面</li>
+<li>拖放上传</li>
+<li>即时反馈</li>
+</ul>
+</li>
+<li>
+<p><strong>灵活性</strong></p>
+<ul>
+<li>支持单张/多张分析</li>
+<li>自定义分类类别</li>
+<li>多种导出格式</li>
+</ul>
+</li>
+<li>
+<p><strong>可扩展性</strong></p>
+<ul>
+<li>模块化设计</li>
+<li>配置外部化</li>
+<li>易于添加新功能</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="112-技术亮点"><span>11.2 技术亮点</span>
+  <a href="#112-%e6%8a%80%e6%9c%af%e4%ba%ae%e7%82%b9" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>前后端分离</strong></p>
+<ul>
+<li>独立开发和部署</li>
+<li>技术栈灵活选择</li>
+</ul>
+</li>
+<li>
+<p><strong>类型安全</strong></p>
+<ul>
+<li>Python类型提示</li>
+<li>TypeScript静态检查</li>
+</ul>
+</li>
+<li>
+<p><strong>现代化UI</strong></p>
+<ul>
+<li>Fluent UI设计系统</li>
+<li>响应式布局</li>
+<li>流畅动画</li>
+</ul>
+</li>
+<li>
+<p><strong>错误处理</strong></p>
+<ul>
+<li>分层错误处理</li>
+<li>友好错误提示</li>
+<li>详细日志记录</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="heading-element" id="113-未来改进方向"><span>11.3 未来改进方向</span>
+  <a href="#113-%e6%9c%aa%e6%9d%a5%e6%94%b9%e8%bf%9b%e6%96%b9%e5%90%91" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>
+<p><strong>性能优化</strong></p>
+<ul>
+<li>并行处理</li>
+<li>缓存机制</li>
+<li>图像压缩</li>
+</ul>
+</li>
+<li>
+<p><strong>功能增强</strong></p>
+<ul>
+<li>病灶分割</li>
+<li>报告生成</li>
+<li>历史记录</li>
+</ul>
+</li>
+<li>
+<p><strong>用户体验</strong></p>
+<ul>
+<li>进度条</li>
+<li>批量导出</li>
+<li>结果对比</li>
+</ul>
+</li>
+<li>
+<p><strong>安全加固</strong></p>
+<ul>
+<li>用户认证</li>
+<li>权限管理</li>
+<li>审计日志</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="附录关键代码片段"><span>附录：关键代码片段</span>
+  <a href="#%e9%99%84%e5%bd%95%e5%85%b3%e9%94%ae%e4%bb%a3%e7%a0%81%e7%89%87%e6%ae%b5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="a1-vlm-api调用示例"><span>A.1 VLM API调用示例</span>
+  <a href="#a1-vlm-api%e8%b0%83%e7%94%a8%e7%a4%ba%e4%be%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 初始化客户端</span>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> VLMClient(
+</span></span><span style="display:flex;"><span>    api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your-api-key&#34;</span>,
+</span></span><span style="display:flex;"><span>    base_url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://dashscope.aliyuncs.com/compatible-mode/v1&#34;</span>,
+</span></span><span style="display:flex;"><span>    model_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;qwen3-vl-plus&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 编码图像</span>
+</span></span><span style="display:flex;"><span>base64_image <span style="color:#f92672">=</span> encode_image_to_base64(<span style="color:#e6db74">&#34;image.jpg&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 构建消息</span>
+</span></span><span style="display:flex;"><span>messages <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;content&#34;</span>: [
+</span></span><span style="display:flex;"><span>            {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;请分析这张医学影像...&#34;</span>},
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;image_url&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;image_url&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;url&#34;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;data:image/jpeg;base64,</span><span style="color:#e6db74">{</span>base64_image<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 调用API</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>call(messages, max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">2000</span>, temperature<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>)</span></span></code></pre></div><hr>
+<h3 class="heading-element" id="a2-react组件状态管理示例"><span>A.2 React组件状态管理示例</span>
+  <a href="#a2-react%e7%bb%84%e4%bb%b6%e7%8a%b6%e6%80%81%e7%ae%a1%e7%90%86%e7%a4%ba%e4%be%8b" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#75715e">// 状态定义
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">files</span>, <span style="color:#a6e22e">setFiles</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">File</span><span style="color:#960050;background-color:#1e0010">[]</span>&gt;([]);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">setResult</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">AnalysisResult</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">null</span>&gt;(<span style="color:#66d9ef">null</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">loading</span>, <span style="color:#a6e22e">setLoading</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 分析处理
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handleAnalyze</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> () <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setLoading</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">analysisResult</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">analyzeImages</span>(<span style="color:#a6e22e">files</span>, <span style="color:#a6e22e">categories</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setResult</span>(<span style="color:#a6e22e">analysisResult</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setError</span>(<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">finally</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setLoading</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 条件渲染
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>{<span style="color:#a6e22e">loading</span> <span style="color:#f92672">&amp;&amp;</span> &lt;<span style="color:#f92672">Spinner</span> /&gt;}
+</span></span><span style="display:flex;"><span>{<span style="color:#a6e22e">result</span> <span style="color:#f92672">&amp;&amp;</span> &lt;<span style="color:#f92672">ResultsView</span> <span style="color:#a6e22e">result</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">result</span>} /&gt;}
+</span></span><span style="display:flex;"><span>{<span style="color:#a6e22e">error</span> <span style="color:#f92672">&amp;&amp;</span> &lt;<span style="color:#f92672">ErrorMessage</span> <span style="color:#a6e22e">message</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">error</span>} /&gt;}</span></span></code></pre></div><hr>
+<p><strong>文档版本：</strong> 1.0<br>
+<strong>最后更新：</strong> 2024年12月<br>
+<strong>作者：</strong> Nazelto<br>
+<strong>联系方式：</strong> <a href="mailto:z15822621293@163.com"target="_blank" rel="external nofollow noopener noreferrer">z15822621293@163.com</a></p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 0001-01-01 00:00:00">Updated on 0001-01-01&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="vscode://file/D:%5cProject%5cBlog%5cmedical-imaging%5ccontent%5cposts%5c%e5%8c%bb%e5%ad%a6%e5%bd%b1%e5%93%8d%e5%88%86%e6%9e%90-%e9%a1%b9%e7%9b%ae%e8%af%a6%e7%bb%86%e4%bb%8b%e7%bb%8d.md" title="Open in editor"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-vscode">Open in editor</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on X" data-sharer="twitter" data-url="http://localhost:1313/medical-imaging/posts/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90-%E9%A1%B9%E7%9B%AE%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/" data-title=""><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/medical-imaging/posts/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90-%E9%A1%B9%E7%9B%AE%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/medical-imaging/posts/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%93%8D%E5%88%86%E6%9E%90-%E9%A1%B9%E7%9B%AE%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/" data-title=""><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/medical-imaging/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/medical-imaging/posts/medical-imaging/" class="post-nav-item" rel="next" title="Medical_imaging">Medical_imaging<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside><dialog id="toc-dialog" aria-labelledby="toc-dialog-title" role="dialog">
+      <div class="toc">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-drawer"><nav >
+  <ul>
+    <li><a href="#项目概述">项目概述</a></li>
+    <li><a href="#一后端系统详解">一、后端系统详解</a>
+      <ul>
+        <li><a href="#11-整体架构">1.1 整体架构</a></li>
+        <li><a href="#12-核心模块功能详解">1.2 核心模块功能详解</a>
+          <ul>
+            <li><a href="#121-vlm-api客户端-api_clientpy">1.2.1 VLM API客户端 (<code>api_client.py</code>)</a></li>
+            <li><a href="#122-医学影像分析器-analyzerpy">1.2.2 医学影像分析器 (<code>analyzer.py</code>)</a></li>
+            <li><a href="#123-工具函数-utilspy">1.2.3 工具函数 (<code>utils.py</code>)</a></li>
+            <li><a href="#124-类型定义-typespy">1.2.4 类型定义 (<code>types.py</code>)</a></li>
+          </ul>
+        </li>
+        <li><a href="#13-django-web服务层">1.3 Django Web服务层</a>
+          <ul>
+            <li><a href="#131-业务服务-servicespy">1.3.1 业务服务 (<code>services.py</code>)</a></li>
+            <li><a href="#132-api视图-viewspy">1.3.2 API视图 (<code>views.py</code>)</a></li>
+            <li><a href="#133-django配置-settingspy">1.3.3 Django配置 (<code>settings.py</code>)</a></li>
+          </ul>
+        </li>
+        <li><a href="#14-命令行接口-clipy">1.4 命令行接口 (<code>cli.py</code>)</a></li>
+        <li><a href="#15-后端调用关系图">1.5 后端调用关系图</a></li>
+      </ul>
+    </li>
+    <li><a href="#二前端系统详解">二、前端系统详解</a>
+      <ul>
+        <li><a href="#21-整体架构">2.1 整体架构</a></li>
+        <li><a href="#22-核心组件详解">2.2 核心组件详解</a>
+          <ul>
+            <li><a href="#221-文件上传组件-fileuploadtsx">2.2.1 文件上传组件 (<code>FileUpload.tsx</code>)</a></li>
+            <li><a href="#222-多图结果展示组件-multipleresultsviewtsx">2.2.2 多图结果展示组件 (<code>MultipleResultsView.tsx</code>)</a></li>
+            <li><a href="#223-统计图表组件-statisticscharttsx">2.2.3 统计图表组件 (<code>StatisticsChart.tsx</code>)</a></li>
+            <li><a href="#224-导出按钮组件-exportbuttontsx">2.2.4 导出按钮组件 (<code>ExportButton.tsx</code>)</a></li>
+            <li><a href="#225-主分析页面-analysispagetsx">2.2.5 主分析页面 (<code>AnalysisPage.tsx</code>)</a></li>
+          </ul>
+        </li>
+        <li><a href="#23-api服务层-apits">2.3 API服务层 (<code>api.ts</code>)</a></li>
+        <li><a href="#24-typescript类型定义-typesindexts">2.4 TypeScript类型定义 (<code>types/index.ts</code>)</a></li>
+        <li><a href="#25-样式设计">2.5 样式设计</a></li>
+        <li><a href="#26-前端调用关系图">2.6 前端调用关系图</a></li>
+      </ul>
+    </li>
+    <li><a href="#三系统集成与部署">三、系统集成与部署</a>
+      <ul>
+        <li><a href="#31-开发环境启动">3.1 开发环境启动</a></li>
+        <li><a href="#32-api代理配置">3.2 API代理配置</a></li>
+        <li><a href="#33-生产环境部署">3.3 生产环境部署</a></li>
+        <li><a href="#34-环境变量配置">3.4 环境变量配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#四核心功能实现原理">四、核心功能实现原理</a>
+      <ul>
+        <li><a href="#41-图像分类原理">4.1 图像分类原理</a></li>
+        <li><a href="#42-批量分析与分组原理">4.2 批量分析与分组原理</a></li>
+        <li><a href="#43-目标检测原理">4.3 目标检测原理</a></li>
+        <li><a href="#44-临时文件管理原理">4.4 临时文件管理原理</a></li>
+      </ul>
+    </li>
+    <li><a href="#五性能优化策略">五、性能优化策略</a>
+      <ul>
+        <li><a href="#51-后端优化">5.1 后端优化</a></li>
+        <li><a href="#52-前端优化">5.2 前端优化</a></li>
+        <li><a href="#53-网络优化">5.3 网络优化</a></li>
+      </ul>
+    </li>
+    <li><a href="#六错误处理机制">六、错误处理机制</a>
+      <ul>
+        <li><a href="#61-后端错误处理">6.1 后端错误处理</a></li>
+        <li><a href="#62-前端错误处理">6.2 前端错误处理</a></li>
+      </ul>
+    </li>
+    <li><a href="#七安全性考虑">七、安全性考虑</a>
+      <ul>
+        <li><a href="#71-文件上传安全">7.1 文件上传安全</a></li>
+        <li><a href="#72-api安全">7.2 API安全</a></li>
+        <li><a href="#73-数据隐私">7.3 数据隐私</a></li>
+      </ul>
+    </li>
+    <li><a href="#八测试策略">八、测试策略</a>
+      <ul>
+        <li><a href="#81-后端测试">8.1 后端测试</a></li>
+        <li><a href="#82-前端测试未实现建议">8.2 前端测试（未实现，建议）</a></li>
+      </ul>
+    </li>
+    <li><a href="#九扩展性设计">九、扩展性设计</a>
+      <ul>
+        <li><a href="#91-支持新的vlm模型">9.1 支持新的VLM模型</a></li>
+        <li><a href="#92-添加新的分析功能">9.2 添加新的分析功能</a></li>
+        <li><a href="#93-多语言支持">9.3 多语言支持</a></li>
+        <li><a href="#94-数据库集成可选">9.4 数据库集成（可选）</a></li>
+      </ul>
+    </li>
+    <li><a href="#十常见问题与解决方案">十、常见问题与解决方案</a>
+      <ul>
+        <li><a href="#101-api调用失败">10.1 API调用失败</a></li>
+        <li><a href="#102-图像无法显示">10.2 图像无法显示</a></li>
+        <li><a href="#103-内存占用过高">10.3 内存占用过高</a></li>
+        <li><a href="#104-分析速度慢">10.4 分析速度慢</a></li>
+      </ul>
+    </li>
+    <li><a href="#十一总结">十一、总结</a>
+      <ul>
+        <li><a href="#111-系统优势">11.1 系统优势</a></li>
+        <li><a href="#112-技术亮点">11.2 技术亮点</a></li>
+        <li><a href="#113-未来改进方向">11.3 未来改进方向</a></li>
+      </ul>
+    </li>
+    <li><a href="#附录关键代码片段">附录：关键代码片段</a>
+      <ul>
+        <li><a href="#a1-vlm-api调用示例">A.1 VLM API调用示例</a></li>
+        <li><a href="#a2-react组件状态管理示例">A.2 React组件状态管理示例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div>
+    </dialog></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.152.2"><img class="hugo-icon" src="/medical-imaging/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.0-alpha.3-20251128065536-6d00e42b"><img class="fixit-icon" src="/medical-imaging/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">
+              <a href="/medical-imaging/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><div class="fixed-button back-to-top animate__faster d-none" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i></div><div id="toc-drawer-button" class="fixed-button toc-drawer-button d-none" role="button" aria-label="Contents"><i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/medical-imaging/lib/cookieconsent/cookieconsent.min.css"><script src="/medical-imaging/lib/json-viewer-element/json-viewer-element.umd.js" defer></script><script src="/medical-imaging/lib/sharer/sharer.min.js" async defer></script><script src="/medical-imaging/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/medical-imaging/js/config/af3f05e7f9460d93d4983b546ecd8741.js" defer></script><script src="/medical-imaging/js/theme.min.js" defer></script></body>
+</html>
