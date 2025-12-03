@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nazelto.github.io/medical-imaging/categories/</loc>
+    <lastmod>2025-12-03T10:12:07+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nazelto.github.io/medical-imaging/categories/introduction/</loc>
+    <lastmod>2025-12-03T10:12:07+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nazelto.github.io/medical-imaging/tags/introduction/</loc>
+    <lastmod>2025-12-03T10:12:07+08:00</lastmod>
+  </url>
+  <url>
     <loc>https://nazelto.github.io/medical-imaging/posts/</loc>
+    <lastmod>2025-12-03T10:12:07+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nazelto.github.io/medical-imaging/tags/</loc>
     <lastmod>2025-12-03T10:12:07+08:00</lastmod>
   </url>
   <url>
@@ -9,9 +25,11 @@
     <lastmod>2025-12-03T10:12:07+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nazelto.github.io/medical-imaging/categories/</loc>
+    <loc>https://nazelto.github.io/medical-imaging/posts/detailed_introduction/</loc>
+    <lastmod>2025-12-03T10:12:07+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nazelto.github.io/medical-imaging/tags/</loc>
+    <loc>https://nazelto.github.io/medical-imaging/posts/medical-imaging/</loc>
+    <lastmod>2025-12-01T20:40:14+08:00</lastmod>
   </url>
 </urlset>

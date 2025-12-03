@@ -9,12 +9,12 @@
     <lastBuildDate>Wed, 03 Dec 2025 10:12:07 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/medical-imaging/categories/draft/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Medical_Impact_Analysis Project_Detailed_Introduction</title>
+      <title>项目详细介绍</title>
       <link>http://localhost:1313/medical-imaging/posts/detailed_introduction/</link>
       <pubDate>Wed, 03 Dec 2025 10:12:07 +0800</pubDate>
       <guid>http://localhost:1313/medical-imaging/posts/detailed_introduction/</guid>
       <category domain="http://localhost:1313/medical-imaging/categories/draft/">Draft</category>
-      <description>Medical_Impact_Analysis Project_Detailed_Introduction</description>
+      <description>项目详细介绍</description>
     </item>
   </channel>
 </rss>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>All Posts - 医学影像分析</title>
-    <link>https://nazelto.github.io/medical-imaging/posts/</link>
+    <title>Introduction - Category - 医学影像分析</title>
+    <link>https://nazelto.github.io/medical-imaging/categories/introduction/</link>
     <description>医学影像分析</description>
     <generator>Hugo 0.152.2 &amp; FixIt v0.4.0-alpha.3-20251128065536-6d00e42b</generator>
     <language>zn-ch</language>
     <lastBuildDate>Wed, 03 Dec 2025 10:12:07 +0800</lastBuildDate>
-    <atom:link href="https://nazelto.github.io/medical-imaging/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nazelto.github.io/medical-imaging/categories/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>项目详细介绍</title>
       <link>https://nazelto.github.io/medical-imaging/posts/detailed_introduction/</link>
@@ -15,13 +15,6 @@
       <guid>https://nazelto.github.io/medical-imaging/posts/detailed_introduction/</guid>
       <category domain="https://nazelto.github.io/medical-imaging/categories/introduction/">Introduction</category>
       <description>项目详细介绍</description>
-    </item>
-    <item>
-      <title>Medical_imaging</title>
-      <link>https://nazelto.github.io/medical-imaging/posts/medical-imaging/</link>
-      <pubDate>Mon, 01 Dec 2025 20:40:14 +0800</pubDate>
-      <guid>https://nazelto.github.io/medical-imaging/posts/medical-imaging/</guid>
-      <description>&lt;p&gt;医学影像分析系统 - 函数文档与流程说明&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
